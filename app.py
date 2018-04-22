@@ -4,8 +4,8 @@ from pymessenger import  Bot
 
 app = Flask(__name__)
 
-#PAGE_ACCESS_TOKEN = ""
-#bot = Bot()
+PAGE_ACCESS_TOKEN = "EAAjPlo1AqfoBAOdXX7AJdBZBsnZA20cwklTyRnaZAxoZAA5u7vUZAHjH0MEy8xKx9zhZAXV7zr0eYArvVsreXzYntBlSD6AYsBCFT6StaCBvmND82xS3w4bbISblgcbPse83fLtB7TEjqfIgKqzZAoKlYwN69YZBafTZCE2GUvsDygQZDZD"
+bot = Bot(PAGE_ACCESS_TOKEN)
 
 @app.route('/', methods=['GET'])
 
@@ -16,7 +16,7 @@ def verify():
         if not request.args.get("hub.verify_token") == "ramapitecus":
             return "Verification token mismatch", 403
         return request.args["hub.challenge"], 200
-    return "Helloworld", 200
+    return "Hello world", 200
 
 @app.route('/', methods=['POST'])
 
@@ -41,7 +41,7 @@ def webhook():
 
                     # ECHO
                     response = messaging_text
-                    bot.send_text_message(sender_id,response)
+                    bot.send_text_message(sender_id, response)
 
 
     return "ok", 200
