@@ -1,6 +1,8 @@
 import os, sys
 from flask import Flask, request,render_template, redirect
-from pymessenger import  Bot
+from pymessenger import Bot
+
+from utils import wit_response
 
 app = Flask(__name__)
 
@@ -40,7 +42,16 @@ def webhook():
                         messaging_text = 'NoText'
 
                     # ECHO
-                    response = messaging_text
+                    response = None
+
+                    entities, values, dictionary_of_values_and_entities = wit_response(messaging_text)
+
+                    for entity in entities:
+                        if entity == 'get_class':
+                            response = "OK! This are your classes of {}: ".format(str(values[entities.index[entity]]))
+
+                        if response == None:
+                            response = "Sorry!, i didn't understand your message.."
                     bot.send_text_message(sender_id, response)
 
 
