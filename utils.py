@@ -21,4 +21,4 @@ def wit_response(message_text):
 
     return (entities, values, dictionary_of_values_and_entities)
 
-#message_text = "When is the next class of mbs of Raul Estrada?"
+#message_text = "Hi?"

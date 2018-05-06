@@ -49,8 +49,9 @@ def webhook():
                         if entity == 'get_class':
                             response = "OK! This are your classes of {}: ".format(str(values[entities.index(entity)]))
 
-                        if response == None:
-                            response = "Sorry!, i didn't understand your message.."
+                    if response == None:
+                        response = "Sorry!, i didn't understand your message.."
+
                     bot.send_text_message(sender_id, response)
 
 
