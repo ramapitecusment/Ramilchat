@@ -47,7 +47,7 @@ def webhook():
 
                     for entity in entities:
                         if entity == 'get_class':
-                            response = "OK! This are your classes of {}: ".format(str(values[entities.index[entity]]))
+                            response = "OK! This are your classes of {}: ".format(str(values[entities.index(entity)]))
 
                         if response == None:
                             response = "Sorry!, i didn't understand your message.."
