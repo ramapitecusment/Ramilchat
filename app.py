@@ -1,8 +1,7 @@
 import os, sys
 from flask import Flask, request,render_template, redirect
-from pymessenger import Bot
-
 from utils import wit_response
+from pymessenger import Bot
 
 app = Flask(__name__)
 
