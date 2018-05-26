@@ -87,7 +87,7 @@ def link_crawler(start_url, link_regex, robots_url=None, user_agent='wswp',
             #for link in get_links(html) + links:
             #    datas.append(link)
             #return datas
-            return get_links(html)
+            return get_links(html)[0][0] + ' at ' + get_links(html)[0][1] + ' in ' + get_links(html)[1]
 
         else:
             return 'Blocked by robots.txt:', url
