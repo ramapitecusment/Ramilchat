@@ -96,8 +96,8 @@ def classes(entities, entity, values):
     try:
 
         site = 'https://almaty.fh-joanneum.at/stundenplan//index.php?submit=Suche&q=' + values[entities.index(entity)]
+        print(site)
         return link_crawler(site, '')
 
     except:
         pass
-print()
