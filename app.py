@@ -8,13 +8,24 @@ from ClassScrapper import classes
 from Events import events
 from FactsJokes import facts
 from FactsJokes import jokes
+from Feel import love_q
+from Feel import love
+from Feel import want_you
+from Feel import feeling
 from Games import games
 from HelloAndBuy import hello
 from HelloAndBuy import buy
 from HelloAndBuy import ok
 from HelloAndBuy import mood
+from HelloAndBuy import needhelp
+from HelloAndBuy import no
+from HelloAndBuy import hobby
+from HelloAndBuy import thanks
+from HelloAndBuy import saythanks
 from NotablePeople import person
 from Search import search
+from StartStop import start
+from StartStop import stop
 from Tips import tips
 from Weather import weather
 
@@ -91,25 +102,25 @@ def webhook():
                             response = weather(entities, entity, values)
 
                         elif entity == 'NeedHelp':
-                            response = NeedHelp(entities, entity, values)
+                            response = needhelp(entities, entity, values)
 
                         elif entity == 'no':
                             response = no(entities, entity, values)
 
                         elif entity == 'Start':
-                            response = Start(entities, entity, values)
+                            response = start(entities, entity, values)
 
                         elif entity == 'Stop':
-                            response = Stop(entities, entity, values)
+                            response = stop(entities, entity, values)
 
                         elif entity == 'event':
-                            response = event(entities, entity, values)
+                            response = events(entities, entity, values)
 
                         elif entity == 'feeling':
                             response = feeling(entities, entity, values)
 
                         elif entity == 'game':
-                            response = game(entities, entity, values)
+                            response = games(entities, entity, values)
 
                         elif entity == 'math':
                             response = calc(entities, entity, values)
@@ -130,13 +141,10 @@ def webhook():
                             response = remind(entities, entity, values)
 
                         elif entity == 'google':
-                            response = google(entities, entity, values)
+                            response = search(entities, entity, values)
 
                         elif entity == 'notable_person':
-                            response = notable_person(entities, entity, values)
-
-                        elif entity == 'datetime':
-                            response = datetime(entities, entity, values)
+                            response = person(entities, entity, values)
 
                         elif entity == 'duration':
                             response = duration(entities, entity, values)
@@ -148,7 +156,7 @@ def webhook():
                             response = thanks(entities, entity, values)
 
                         elif entity == 'SayThanks':
-                            response = SayThanks(entities, entity, values)
+                            response = saythanks(entities, entity, values)
 
                         elif entity == 'local_search':
                             response = local_search(entities, entity, values)

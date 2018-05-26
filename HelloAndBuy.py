@@ -26,3 +26,38 @@ def mood(entities, entity, values):
             return "I am fine! What about you?"
     except:
         pass
+
+def needhelp(entities, entity, values):
+    try:
+        if entity == 'NeedHelp':
+            return "How can I help you?"
+    except:
+        pass
+
+def no(entities, entity, values):
+    try:
+        if entity == 'no':
+            return "Ok."
+    except:
+        pass
+
+def hobby(entities, entity, values):
+    try:
+        if entity == 'hobby':
+            return "I like chatting."
+    except:
+        pass
+
+def thanks(entities, entity, values):
+    try:
+        if entity == 'thanks':
+            return "You're welcome!"
+    except:
+        pass
+
+def saythanks(entities, entity, values):
+    try:
+        if entity == 'SayThanks':
+            return "Thank you!"
+    except:
+        pass
