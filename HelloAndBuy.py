@@ -1,7 +1,7 @@
 def hello(entities, entity, values):
     try:
-        if entity == 'hello':
-            return str(values[entities.index(entity)]) + "! How can I help you?"
+        if entity == 'greetings':
+            return "Hi! How can I help you?"
     except:
         pass
 
@@ -9,7 +9,7 @@ def hello(entities, entity, values):
 def buy(entities, entity, values):
     try:
         if entity == 'bye':
-            return str(values[entities.index(entity)]) + "! I was happy to help you :)"
+            return "Bye! I was happy to help you :)"
     except:
         pass
 

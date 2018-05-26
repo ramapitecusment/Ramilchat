@@ -1,6 +1,6 @@
-def tips(entities, entity, values):
+def search(entities, entity, values):
     try:
 
-        return "Hello from TIPS!"
+        return "Hello from search!"
     except:
         pass

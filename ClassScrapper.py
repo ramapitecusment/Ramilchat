@@ -94,7 +94,9 @@ def link_crawler(start_url, link_regex, robots_url=None, user_agent='wswp',
 
 def classes(entities, entity, values):
     try:
-        return link_crawler('https://almaty.fh-joanneum.at/stundenplan//index.php?submit=Suche&q=mbs', '')
+
+        site = 'https://almaty.fh-joanneum.at/stundenplan//index.php?submit=Suche&q=' + values[entities.index(entity)]
+        return link_crawler(site, '')
 
     except:
         pass

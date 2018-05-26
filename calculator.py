@@ -1,23 +1,25 @@
+import math
 def calc(entities, entity, values):
-    try:
 
-        #for s in values:
-         #   if s in ('+', '-', '*', '/', '^'):
-          #      if s == '+':
-           #         return "%.2f" % (x + y)
-            #    elif s == '-':
-             #       return "%.2f" % (x - y)
-              #  elif s == '*':
-               #     return "%.2f" % (x * y)
-                #elif s == '^':
-                 #   return "%.2f" % (x ** y)
-                #elif s == '/':
-                 #   if y != 0:
-                  #      return "%.2f" % (x / y)
-                   # else:
-                    #    return "Division by ZERO!!!"
-            #else:
-             #   return "The wrong sign of the operation!"
-                return "Hello from calculator calass"
+    try:
+        if '+' in values[entities.index(entity)]:
+            value = str(values[entities.index(entity)]).split('+')
+            return float(value[0]) + float(value[1])
+        if '-' in values[entities.index(entity)]:
+            value = str(values[entities.index(entity)]).split('-')
+            return float(value[0]) - float(value[1])
+        if '/' in values[entities.index(entity)]:
+            value = str(values[entities.index(entity)]).split('/')
+            if float(value[1]) == 0:
+                return 'division by zero!'
+            else:
+                return float(value[0]) / float(value[1])
+        if '*' in values[entities.index(entity)]:
+            value = str(values[entities.index(entity)]).split('*')
+            return float(value[0]) * float(value[1])
+        if '^' in values[entities.index(entity)]:
+            value = str(values[entities.index(entity)]).split('^')
+            return math.pow(float(value[0]), float(value[1]))
+
     except:
         pass

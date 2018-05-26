@@ -4,18 +4,20 @@ from pymessenger import Bot
 
 from utils import wit_response
 from calculator import calc
+from ClassScrapper import classes
+from Events import events
+from FactsJokes import facts
+from FactsJokes import jokes
+from Games import games
 from HelloAndBuy import hello
 from HelloAndBuy import buy
 from HelloAndBuy import ok
 from HelloAndBuy import mood
 from NotablePeople import person
-from ClassScrapper import classes
-from Events import events
-from FactsJokes import facts
-from FactsJokes import jokes
+from Search import search
 from Tips import tips
 from Weather import weather
-from Games import games
+
 
 app = Flask(__name__)
 
@@ -110,7 +112,7 @@ def webhook():
                             response = game(entities, entity, values)
 
                         elif entity == 'math':
-                            response = maths(entities, entity, values)
+                            response = calc(entities, entity, values)
 
                         elif entity == 'love_q':
                             response = love_q(entities, entity, values)
