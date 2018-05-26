@@ -46,8 +46,9 @@ def webhook():
 
                     entities, values, dictionary_of_values_and_entities = wit_response(messaging_text)
 
-                    if entry == 'greetings':
-                        response = "hello"
+                    for entity in entities:
+                        if entity == 'greetings':
+                            response = "hello"
 
                     if response == None:
                         response = "Sorry! I didn't understand your message..."
