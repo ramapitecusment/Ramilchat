@@ -1,6 +1,7 @@
-def weather(entities, entity, values):
+def distance(entities, entity, values):
     try:
-        return "Hello from WEATHER!"
+        if entity == 'distance':
+            return "Hello from WEATHER!"
 
     except:
         pass

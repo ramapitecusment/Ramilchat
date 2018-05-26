@@ -3,8 +3,11 @@ from flask import Flask, request,render_template, redirect
 from pymessenger import Bot
 
 from utils import wit_response
+from AmountOfMoney import amount_of_money
 from calculator import calc
 from ClassScrapper import classes
+from Distance import distance
+from Duration import duration
 from Events import events
 from FactsJokes import facts
 from FactsJokes import jokes
@@ -22,7 +25,9 @@ from HelloAndBuy import no
 from HelloAndBuy import hobby
 from HelloAndBuy import thanks
 from HelloAndBuy import saythanks
+from LocalSearch import local_search
 from NotablePeople import person
+from Remind import remind
 from Search import search
 from StartStop import start
 from StartStop import stop

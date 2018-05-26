@@ -1,6 +1,7 @@
-def weather(entities, entity, values):
+def local_search(entities, entity, values):
     try:
-        return "Hello from WEATHER!"
+        if entity == 'local_search':
+            return "Hello from local_searchs!"
 
     except:
         pass

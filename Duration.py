@@ -1,6 +1,7 @@
-def weather(entities, entity, values):
+def duration(entities, entity, values):
     try:
-        return "Hello from WEATHER!"
+        if entity == 'duration':
+            return "Hello from duration!"
 
     except:
         pass

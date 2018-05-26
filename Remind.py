@@ -1,6 +1,7 @@
-def weather(entities, entity, values):
+def remind(entities, entity, values):
     try:
-        return "Hello from WEATHER!"
+        if entity == 'remind':
+            return "Hello from remind!"
 
     except:
         pass
