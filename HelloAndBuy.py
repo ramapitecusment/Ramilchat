@@ -1,6 +1,8 @@
 def hello(entities, entity, values):
     try:
-        if entity == 'greetings':
+        if 'mood' in entities:
+            return "I am fine! What about you?"
+        elif entity == 'greetings':
             return "Hi! How can I help you?"
     except:
         pass
@@ -15,7 +17,9 @@ def buy(entities, entity, values):
 
 def ok(entities, entity, values):
     try:
-        if entity == 'ok':
+        if 'mood' in entities:
+            return "I am fine! What about you?"
+        elif entity == 'ok':
             return str(values[entities.index(entity)])
     except:
         pass
