@@ -81,14 +81,14 @@ def webhook():
                             response = classes(entities, entity, values)
                             # response = "OK! This are your classes of {}: ".format(str(values[entities.index(entity)]))
 
+                        elif entity == 'mood':
+                            response = mood(entities, entity, values)
+
                         elif entity == 'greetings':
                             response = hello(entities, entity, values)
 
                         elif entity == 'bye':
                             response = buy(entities, entity, values)
-
-                        elif entity == 'mood':
-                            response = mood(entities, entity, values)
 
                         elif entity == 'tips':
                             response = tips(entities, entity, values)
