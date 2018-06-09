@@ -19,6 +19,7 @@ from Games import games
 from HelloAndBuy import hello
 from HelloAndBuy import buy
 from HelloAndBuy import ok
+from HelloAndBuy import because_a
 from HelloAndBuy import mood
 from HelloAndBuy import needhelp
 from HelloAndBuy import no
@@ -92,6 +93,9 @@ def webhook():
 
                         elif entity == 'tips':
                             response = tips(entities, entity, values)
+
+                        elif entity == 'because_a':
+                            response = because_a(entities, entity, values)
 
                         elif entity == 'fact':
                             response = facts(entities, entity, values)

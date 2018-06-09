@@ -65,3 +65,10 @@ def saythanks(entities, entity, values):
             return "Thank you!"
     except:
         pass
+
+def because_a(entities, entity, values):
+    try:
+        if entity == 'because_a':
+            return "I see."
+    except:
+        pass
