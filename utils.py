@@ -1,4 +1,5 @@
 from wit import Wit
+from AmountOfMoney import amount_of_money
 
 access_token = "CCBDKWLQI322FY74JTVLURSJWOAEYOXP"
 client = Wit(access_token = access_token)
@@ -25,3 +26,8 @@ def wit_response(message_text):
 #print(entities)
 #print(values)
 #print(dictionary_of_values_and_entities)
+
+#entities, values, dictionary_of_values_and_entities = wit_response("100 USD in EUR")
+#for entity in entities:
+
+#print(response)

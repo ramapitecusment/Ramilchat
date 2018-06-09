@@ -1,7 +1,6 @@
 import os, sys
 from flask import Flask, request,render_template, redirect
 from pymessenger import Bot
-
 from utils import wit_response
 from AmountOfMoney import amount_of_money
 from calculator import calc
@@ -90,6 +89,9 @@ def webhook():
 
                         elif entity == 'bye':
                             response = buy(entities, entity, values)
+
+                        elif entity == 'currency_1':
+                            response = amount_of_money(entities, entity, values)
 
                         elif entity == 'tips':
                             response = tips(entities, entity, values)
