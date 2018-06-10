@@ -93,10 +93,10 @@ def facts(entities, entity, values):
             travel = 1
 
         else:
-            interesting = int(random.random() * 14)
+            interesting = int(random.random()) * 14
 
         if beauty == 1 or interesting == 0:
-            i = random.random() * 9
+            i = int(random.random()) * 9
             if i == 0:
                 fact = 'Lipstick was an essential item in World War II'
 
@@ -135,12 +135,12 @@ def facts(entities, entity, values):
                        'when he is being smiled at by other women.'
 
             else:
-                fact = 'Beautiful people make about 5% more than their average-looking colleagues.'
+                fact = 'Beautiful people earn about 5% more than their average-looking colleagues.'
 
             return fact
 
         elif celebrity == 1 or interesting == 1:
-            i = random.random() * 9
+            i = int(random.random()) * 14
             if i == 0:
                 fact = 'George Washington Became an Official Surveyor When He Was 17 Years Old'
 
@@ -192,7 +192,7 @@ def facts(entities, entity, values):
             return fact
 
         elif disaster == 1 or interesting == 2:
-            i = random.random() * 9
+            i = int(random.random()) * 9
             if i == 0:
                 fact = '250,000 Jews Were Killed in Europe Long Before the Holocaust'
 
@@ -230,7 +230,7 @@ def facts(entities, entity, values):
             return fact
 
         elif fashion == 1 or interesting == 3:
-            i = random.random() * 9
+            i = int(random.random()) * 9
             if i == 0:
                 fact = 'Did you know that in 15th century, being pregnant was considered as fashionable and if girls ' \
                        'weren’t pregnant, they would hide pillows under their dresses to fake a baby bump?'
@@ -281,7 +281,7 @@ def facts(entities, entity, values):
             return fact
 
         elif food == 1 or interesting == 4:
-            i = random.random() * 9
+            i = int(random.random()) * 9
             if i == 0:
                 fact = 'The average person eats for a life of 20-25 tons of food.'
 
@@ -320,7 +320,7 @@ def facts(entities, entity, values):
             return fact
 
         elif health == 1 or interesting == 5:
-            i = random.random() * 9
+            i = int(random.random()) * 9
             if i == 0:
                 fact = '20 Million Americans Have Died from Smoking in the Last 50 Years'
 
@@ -358,340 +358,689 @@ def facts(entities, entity, values):
             return fact
 
         elif history == 1 or interesting == 6:
-            i = random.random() * 9
+            i = int(random.random()) * 19
             if i == 0:
                 fact = 'Cleopatra Was the Last Pharaoh of Egypt'
 
             elif i == 1:
-                fact = ''
+                fact = 'Humans have been hunter-gatherers for 99% of their history.'
 
             elif i == 2:
-                fact = ''
+                fact = 'Humans are 50% heavier and four inches taller in the past 100 years than ' \
+                       'they have been throughout most of human history.'
 
             elif i == 3:
-                fact = ''
+                fact = 'In 5,000 years of human history, only one disease has been eradicated: smallpox.'
 
             elif i == 4:
-                fact = ''
+                fact = 'When Columbus "discovered" the Americas, the continent was already inhabited by 90 million' \
+                       ' people which was a third of the world’s population.'
 
             elif i == 5:
-                fact = ''
+                fact = 'Leif Erikson is regarded as the first European to land in North America, nearly ' \
+                       '500 years before Columbus.'
 
             elif i == 6:
-                fact = ''
+                fact = 'We Are Living In The Most Peaceful Time In Human History.'
 
             elif i == 7:
-                fact = ''
+                fact = 'WW1 was the sixth deadliest conflict in world history.'
 
             elif i == 8:
-                fact = ''
+                fact = 'The Afghan War is the longest war in U.S. history.'
 
             elif i == 9:
-                fact = ''
+                fact = 'Napoleon wasn’t short. He was actually above the average Frenchman.'
+
+            elif i == 10:
+                fact = 'About 100 billion people have died in all human history.'
+
+            elif i == 11:
+                fact = 'Interracial marriage was banned in the U.S. for much of its history: from 1776 to 1967.'
+
+            elif i == 12:
+                fact = 'The first car accident occurred in 1891, in Ohio.'
+
+            elif i == 13:
+                fact = 'From 1814 to 1830, the flag of the Kingdom of France was plain white.'
+
+            elif i == 14:
+                fact = 'Life expectancy in Ancient Rome was from 20 to 30 years.'
+
+            elif i == 15:
+                fact = 'Christmas was illegal in the U.S. until 1836 as it was considered an Ancient Pagan Holiday.'
+
+            elif i == 16:
+                fact = 'The Aztecs sacrificed 1% of their population every year, or about 250,000 people.'
+
+            elif i == 17:
+                fact = 'Proportionally speaking, the most destructive war in modern history was the War of the ' \
+                       'Triple Alliance, which took the lives of over 60% of Paraguay’s ' \
+                       'population, leaving a woman/man ratio of 4 to 1.'
+
+            elif i == 18:
+                fact = 'Estimates for the total number of people killed in wars throughout all of ' \
+                       'human history range from 150 million to 1 billion.'
+
+            elif i == 19:
+                fact = 'If Earth’s history were condensed into 24 hours, life would’ve appeared at 4am, land plants ' \
+                       'at 10:24pm, dinosaur extinction at 11:41pm and human history would’ve begun at 11:58:43pm.'
 
             else:
-                fact = ''
+                fact = 'In 536 A.D., there was a worldwide dust cloud that blocked out the sun for a year, ' \
+                       'resulting in widespread famine and disease.'
 
             return fact
 
         elif hot == 1 or interesting == 7:
-            i = random.random() * 9
+            i = int(random.random()) * 20
             if i == 0:
-                fact = ''
+                fact = '20 Million Americans Have Died from Smoking in the Last 50 Years'
 
             elif i == 1:
-                fact = ''
+                fact = '1 in 3 Cancer Deaths Are Caused by Smoking'
 
             elif i == 2:
-                fact = ''
+                fact = '70% of States Have Gay Marriage, 15 States Ban It'
 
             elif i == 3:
-                fact = ''
+                fact = '170 Thousand Billion Watts from the Sun Hits Earth Every Moment'
 
             elif i == 4:
-                fact = ''
+                fact = 'When We Eat Fruits and Vegetables We Get Calories from the Sun'
 
             elif i == 5:
-                fact = ''
+                fact = 'Vitamin D is Created in Our Body by Solar Energy'
 
             elif i == 6:
-                fact = ''
+                fact = 'The First Solar Power Station Was Built in 1912'
 
             elif i == 7:
-                fact = ''
+                fact = '800 Million to 600 Million Years Ago the Earth Was Covered in Ice'
 
             elif i == 8:
-                fact = ''
+                fact = 'A Change in the Earth’s Temperature Has a Domino Effect on Weather'
 
             elif i == 9:
-                fact = ''
+                fact = 'Madame Curie’s notebooks are still radioactive. Researchers wishing to study them must ' \
+                       'sign a waiver in order to do so.'
+
+            elif i == 10:
+                fact = 'When Twister was introduced in 1966, it was denounced by critics as "sex in a box."'
+
+            elif i == 11:
+                fact = 'There are more lifeforms living on your skin than there are people on the planet.'
+
+            elif i == 12:
+                fact = 'OJ Simpson was originally cast to play Terminator, but the studio was afraid that no ' \
+                       'one would buy him as a remorseless killer.'
+
+            elif i == 13:
+                fact = 'Leonardo da Vinci could write with one hand and draw with the other at the same time.'
+
+            elif i == 14:
+                fact = 'The last man to walk on the moon, Gene Cernan, promised his daughter he’d write her initials ' \
+                       'on the moon. He did, and her initials, “TDC,” will probably be on the moon ' \
+                       'for tens of thousands of years.'
+
+            elif i == 15:
+                fact = 'The Mimic Octopus can not only change colours, but will mimic the shapes of other animals,' \
+                       ' like the flounder, lionfish, and sea snakes.'
+
+            elif i == 16:
+                fact = 'Twenty percent of office coffee mugs contain fecal matter.'
+
+            elif i == 17:
+                fact = 'If you were to remove all of the empty space from the atoms that make up every human on ' \
+                       'earth, the entire world population could fit into an apple.'
+
+            elif i == 18:
+                fact = 'The three wealthiest families in the world have more assets than the' \
+                       ' combined wealth of the forty-eight poorest nations.'
+
+            elif i == 19:
+                fact = 'The biggest traffic jam lasted for more than 10 days, with cars only moving 0.6 miles a day.'
+
+            elif i == 20:
+                fact = 'When adjusted for inflation, John D. Rockefeller is the richest man in the history ' \
+                       'of the world with a net worth 10 times more than Bill Gates.'
 
             else:
-                fact = ''
+                fact = 'Dueling is legal in Paraguay as long as both parties are registered blood donors.'
 
             return fact
 
         elif kids == 1 or interesting == 8:
-            i = random.random() * 9
+            i = int(random.random()) * 9
             if i == 0:
-                fact = ''
+                fact = 'Former billionaire Chuck Feeney has given away over 99% of his 6.3 Billion dollars to help' \
+                       ' under privileged kids go to college. He is now worth $2 million dollars.'
 
             elif i == 1:
-                fact = ''
+                fact = 'The longest study of humans ever conducted, the 75 years long Harvard grant study found ' \
+                       'that professional success in life comes from having done chores as a kid.'
 
             elif i == 2:
-                fact = ''
+                fact = 'U.K. kids spend less time outside than prison inmates.'
 
             elif i == 3:
-                fact = ''
+                fact = 'Bilingual children appear to get a head start on empathy-related skills such as learning ' \
+                       'to take someone else’s perspective.'
 
             elif i == 4:
-                fact = ''
+                fact = 'Kids in cars are 12 times more distracting for drivers than talking on cell phones.'
 
             elif i == 5:
-                fact = ''
+                fact = 'In 2013, a 17-year old kid named Tyler Hadley murdered his parents and hid ' \
+                       'their bodies in a locked bedroom so he could throw a huge house party.'
 
             elif i == 6:
-                fact = ''
+                fact = 'Doctor Who was originally an educational show, with episodes set in the future ' \
+                       'to teach kids about science, and episodes set in the past to teach them history.'
 
             elif i == 7:
-                fact = ''
+                fact = 'We typically do not start to think of foods as "too sweet" until our bone growth stops. ' \
+                       'Younger children have virtually no limit to the amount of sugar they find palatable.'
 
             elif i == 8:
-                fact = ''
+                fact = 'When researchers offered kids broccoli or a chocolate bar, four out of five picked the ' \
+                       'chocolate but when an Elmo sticker was placed on the broccoli, 50 % chose the broccoli.'
 
             elif i == 9:
-                fact = ''
+                fact = 'In 1994, a Russian pilot named Yaroslav Kudrinsky let his 15-year-old son ' \
+                       'and 12-year-old daughter try to fly an aircraft.'
 
             else:
-                fact = ''
+                fact = 'If a set of identical twin women married a set of identical twin men ' \
+                       'and subsequently had kids, their children would genetically be siblings.'
 
             return fact
 
         elif lifestyle == 1 or interesting == 9:
-            i = random.random() * 9
+            i = int(random.random()) * 9
             if i == 0:
-                fact = ''
+                fact = 'One of the popular hobbies among women is shopping. They will love to buy accessories ' \
+                       'and fashion items that they do not need just because they are sold with discount promo.'
 
             elif i == 1:
-                fact = ''
+                fact = 'One of the phenomenal masterpieces from the greatest artist Leonardo Da Vinci is the ' \
+                       'painting of Mona Lisa. If you scrutinize the face of this beautiful woman, you will see ' \
+                       'that she has not eyebrows.  It was a fashion in such era to shave the eyebrows if you want' \
+                       'to be considered as a beautiful woman.'
 
             elif i == 2:
-                fact = ''
+                fact = 'The development of technology is well represented through internet. You can gain a lot ' \
+                       'of information about education, science, fashion, technology and health easily by accessing ' \
+                       'internet. If someone is bothering you every day, you just have to teach his or her to use ' \
+                       'internet. Trust me that they will never disturb you for weeks.'
 
             elif i == 3:
-                fact = ''
+                fact = 'Cell phone is the fourth point of life facts. It is another invasion of technology to human ' \
+                       'life. People love to use cell phone when they want to communicate. In US, more than 30 ' \
+                       'million of mobile phones are used by the citizens on a daily basis.'
 
             elif i == 4:
-                fact = ''
+                fact = 'Olive is included as a species of a small tree. It is the member of family Oleaceae. ' \
+                       'The fascinating fact lies on the life span of Olive. It can live up to 1500 years.'
 
             elif i == 5:
-                fact = ''
+                fact = 'Shirt is the clothing line that people wear when they want to go in formal occasion. The ' \
+                       'shirt for men and women are different. If you look at the men’s shirt, you will see that ' \
+                       'it has the button on the right side. The women’s shirt is equipped with the button ' \
+                       'on the left side.'
 
             elif i == 6:
-                fact = ''
+                fact = 'The seventh point of life facts is about Cleopatra. She is considered as the beautiful woman ' \
+                       'in the world. The queen of Egypt had married with two of her bothers. Isn’t that ridiculous?'
 
             elif i == 7:
-                fact = ''
+                fact = 'Ant is one of the tiny animals. This species loves with sugar. When people sleep, they will ' \
+                       'close their eyes. I just wonder on how the ants sleep since they cannot shout the eyes.'
 
             elif i == 8:
-                fact = ''
+                fact = 'Cooking is a nice hobby for some men and women. They will have a chance to explore the skill ' \
+                       'by making exclusive food. If you have to slice the onion, I suggest you to eat chewing gum. ' \
+                       'It can decrease the tears when you cut the onions.'
 
             elif i == 9:
-                fact = ''
+                fact = 'You will be lucky if you can eat fortune cookies. This food was initially created by ' \
+                       'Charles Jung in America, 1918.'
 
             else:
-                fact = ''
+                fact = 'The country, which most likely will soon be under water, is Maldives.'
 
             return fact
 
         elif nature == 1 or interesting == 10:
-            i = random.random() * 9
+            i = int(random.random()) * 21
             if i == 0:
-                fact = ''
+                fact = 'Bald Eagles Build the Largest Tree Nests of Any Bird'
 
             elif i == 1:
-                fact = ''
+                fact = 'Female Bald Eagles Are 25% Larger than Males'
 
             elif i == 2:
-                fact = ''
+                fact = 'Bears Have Lived on Earth for 38 Million Years'
 
             elif i == 3:
-                fact = ''
+                fact = 'There Are over 30 Dolphin Species'
 
             elif i == 4:
-                fact = ''
+                fact = 'Polar Bears Evolved from Brown to White for Camouflage'
 
             elif i == 5:
-                fact = ''
+                fact = 'Male Polar Bears Have Longer Hairs on Their Front Legs for Mating'
 
             elif i == 6:
-                fact = ''
+                fact = 'There Are Only 8 Species of Bear'
 
             elif i == 7:
-                fact = ''
+                fact = 'Penguins Lost the Ability to Fly 62 Million Years Ago'
 
             elif i == 8:
-                fact = ''
+                fact = 'Koalas Sleep 20 Hours a Day'
 
             elif i == 9:
-                fact = ''
+                fact = 'Koalas Only Spend 15 Minutes a Day Hanging Out'
+
+            elif i == 10:
+                fact = 'Koalas Have 2 Opposable Thumbs'
+
+            elif i == 11:
+                fact = 'Penguins Can Swim Up to 17 Miles Per Hour'
+
+            elif i == 12:
+                fact = 'Penguins Can Drink Salt Water and Not Get Sick'
+
+            elif i == 13:
+                fact = 'Penguins Can Withstand −40 °F by Working Together in Heat Packs'
+
+            elif i == 14:
+                fact = 'The Largest Bear Is 30 Times the Size of Smallest Bear'
+
+            elif i == 15:
+                fact = 'Baby Pandas Are Blind, Hairless and 1/900th the Size of the Mother'
+
+            elif i == 16:
+                fact = 'More than Meow! Cats Can Make Over 90 Different Sounds'
+
+            elif i == 17:
+                fact = 'Is It Time for a Catnap? Cat’s Spend 2/3rds of Their Life Sleeping'
+
+            elif i == 18:
+                fact = 'Lions, Tigers, Jaguars, and Leopards Purr Too'
+
+            elif i == 19:
+                fact = 'Giraffes Are as Tall as a 2-Story House'
+
+            elif i == 20:
+                fact = 'A Giraffe Can Shatter a Lion’s Skull with 1 Kick'
+
+            elif i == 21:
+                fact = 'Giraffes Can Run Over 30 Miles Per Hour'
 
             else:
-                fact = ''
+                fact = 'Giraffes Necks Grew Over Time … Over Millions Of Years'
 
             return fact
 
         elif personal == 1 or interesting == 11:
-            i = random.random() * 9
+            i = int(random.random()) * 9
             if i == 0:
-                fact = ''
+                fact = 'The brain is more lively at night than during the day. Scientists don’t ' \
+                       'recognize yet why this is.'
 
             elif i == 1:
-                fact = ''
+                fact = 'The most interesting fact about human body is that women’s heart beat quicker than men’s. ' \
+                       'Women blink two times as men do. ' \
+                       'Women are natural better smellers than men and remain superior smellers over life.'
 
             elif i == 2:
-                fact = ''
+                fact = 'Babies are forever born with blue eyes. The melanin in their eyes wants time to be fully ' \
+                       'deposit or to be dark by ultraviolet light to disclose the baby’s true eye color.'
 
             elif i == 3:
-                fact = ''
+                fact = 'The single part of your body that has no blood supply is the cornea in the eye. ' \
+                       'It gets its oxygen straight from air.'
 
             elif i == 4:
-                fact = ''
+                fact = 'Our skeleton keeps renewing itself every ten years which means to every ten years you' \
+                       ' get a fresh skeleton.'
 
             elif i == 5:
-                fact = ''
+                fact = 'An adult human being is made of approximately 7,000,000,000,000,000,000,000,000,000 atoms. ' \
+                       'Obviously, this varies based on the size of the person and their body composition.'
 
             elif i == 6:
-                fact = ''
+                fact = 'There are 100,000 miles of blood vessels in an adult human body. The largest blood vessel ' \
+                       'is the aorta, which is just over an inch in diameter.'
 
             elif i == 7:
-                fact = ''
+                fact = 'Researchers estimate that the average human being can distinguish between 1 trillion ' \
+                       'different odors. This is much more acute than the human eye, which can ' \
+                       'distinguish about 10 million different colors.'
 
             elif i == 8:
-                fact = ''
+                fact = 'Pound for pound, the strongest muscle in the human body is the masseter (jaw muscle). ' \
+                       'It can clamp your chompers shut with 55 pounds of force on the incisors and 200' \
+                       ' pounds of force on the molars.'
 
             elif i == 9:
-                fact = ''
+                fact = 'Your ears and nose will never stop growing until the day you die. In fact, your earlobes ' \
+                       'will also elongate from gravity.'
 
             else:
-                fact = ''
+                fact = 'Similar to fingerprints, everyone also has a unique tongue print. It may be some time before ' \
+                       'your local police station starts taking tongue prints, but research on the required 3-D ' \
+                       'imaging technology is already being developed and tested.'
 
             return fact
 
         elif place == 1 or interesting == 12:
-            i = random.random() * 9
+            i = int(random.random()) * 20
             if i == 0:
-                fact = ''
+                fact = '6% of People in Ecuador Speak 1 of 13 Native Dialects'
 
             elif i == 1:
-                fact = ''
+                fact = 'There Are More Mobile Phones Than People in Ecuador'
 
             elif i == 2:
-                fact = ''
+                fact = 'The Eiffel Tower Was the World’s Tallest Structure for 41 Years'
 
             elif i == 3:
-                fact = ''
+                fact = 'Gustave Eiffel Did Not Design the Eiffel Tower – Maurice Koechlin Did'
 
             elif i == 4:
-                fact = ''
+                fact = 'It Took 3 Years of Lobbying to Approve the Eiffel Tower in 1887'
 
             elif i == 5:
-                fact = ''
+                fact = 'Over 200,000,000 People Have Visited the Eiffel Tower'
 
             elif i == 6:
-                fact = ''
+                fact = 'Only One Person Died in the Construction of the Eiffel Tower'
 
             elif i == 7:
-                fact = ''
+                fact = 'More than 2 Million German Soldiers Died in World War 1'
 
             elif i == 8:
-                fact = ''
+                fact = 'More than 5 Million German Soldiers Died in World War 2'
 
             elif i == 9:
-                fact = ''
+                fact = 'X-Rays, The Printing Press, and Einstein all Came from Germany'
+
+            elif i == 10:
+                fact = 'People Lived in Argentina More than 10,000 Years Ago'
+
+            elif i == 11:
+                fact = 'The Statue of Liberty Was Built Like the Eiffel Tower'
+
+            elif i == 12:
+                fact = 'Models of the Statue of Liberty Sold Before the Statue Was Done'
+
+            elif i == 13:
+                fact = 'The Statue of Liberty Honors the Union Victory in the Civil War'
+
+            elif i == 14:
+                fact = 'The Statue of Liberty’s Nose is Over 4 Feet Long'
+
+            elif i == 15:
+                fact = 'The Statue of Liberty Has Had a Few Makeovers in 120 Years'
+
+            elif i == 16:
+                fact = 'Africa is the home for largest living land animals, the African elephant, ' \
+                       'and the tallest, Giraffe.'
+
+            elif i == 17:
+                fact = 'In 1867, the U.S. owned Alaska for just $72 millions from Russia.'
+
+            elif i == 18:
+                fact = 'In Antarctica, there is only 1 ATM.'
+
+            elif i == 19:
+                fact = 'The most visited place in Europe is Disneyland, Paris.'
+
+            elif i == 20:
+                fact = 'There are many hidden walkways that are not explored yet in Giza pyramid.'
 
             else:
-                fact = ''
+                fact = 'Argentina is Huge – Over 1 Million Square Miles'
 
             return fact
 
         elif science == 1 or interesting == 13:
-            i = random.random() * 9
+            i = int(random.random()) * 60
             if i == 0:
-                fact = ''
+                fact = 'The Earth Generates $72 Trillion of Goods and Services Each Year'
 
             elif i == 1:
-                fact = ''
+                fact = 'The Word ‘Earth’ Has Been on Earth for 7,000 Years'
 
             elif i == 2:
-                fact = ''
+                fact = 'The Earth Isn’t a Perfect Sphere – It Has a 27 Mile Tall Bulge at Its Belly'
 
             elif i == 3:
-                fact = ''
+                fact = 'The Earth Is 32.1% Iron and 30.1% Oxygen'
 
             elif i == 4:
-                fact = ''
+                fact = 'The Center of the Earth, at 10,380 °F, Is as Hot as the Sun'
 
             elif i == 5:
-                fact = ''
+                fact = 'If The Earth Was Smooth, A 1.5 Mile Deep Ocean Would Cover the World'
 
             elif i == 6:
-                fact = ''
+                fact = 'It’s Hard to Tell Where Earth’s Atmosphere Ends and Space Begins'
 
             elif i == 7:
-                fact = ''
+                fact = 'Going as Fast as the Earth You Could Reach the Moon in 3.5 Hours'
 
             elif i == 8:
-                fact = ''
+                fact = 'When the Earth Was Formed, a Day Was Only 5.5 Hours Long'
 
             elif i == 9:
-                fact = ''
+                fact = '77% of the Earth’s Population Lives in the Northeastern Quadrasphere'
+
+            elif i == 10:
+                fact = 'Einstein Created Modern Physics With 4 Papers in 1 Miracle Year, 1905'
+
+            elif i == 11:
+                fact = 'Albert Einstein Read Euclid and Kant When He Was 10 Years Old'
+
+            elif i == 12:
+                fact = 'Albert Einstein Convinced FDR to Build the Atomic Bomb'
+
+            elif i == 13:
+                fact = 'It Took 15 Years for Einstein’s Relativity Theory to Make Him Famous'
+
+            elif i == 14:
+                fact = 'Albert Einstein Failed His First Entrance Exam to College in 1895'
+
+            elif i == 15:
+                fact = 'Albert Einstein Was an Ordinary Patent Clerk When He Was 21'
+
+            elif i == 16:
+                fact = 'Albert Einstein Made His Breakthrough Discoveries in Relative Isolation'
+
+            elif i == 17:
+                fact = 'In 3 Years Albert Einstein Went from Obscurity to Celebrity'
+
+            elif i == 18:
+                fact = 'Einstein’s Relativity Theory Was Proved in 1919 During a Solar Eclipse'
+
+            elif i == 19:
+                fact = 'Albert Einstein Wasn’t a United States Citizen Until 1940'
+
+            elif i == 20:
+                fact = '170 Thousand Billion Watts from the Sun Hits Earth Every Moment'
+
+            elif i == 21:
+                fact = 'When We Eat Fruits and Vegetables We Get Calories from the Sun'
+
+            elif i == 22:
+                fact = 'The First Solar Power Station Was Built in 1912'
+
+            elif i == 23:
+                fact = 'A Cool Drink on a Hot Day Is A Passive Solar Technology'
+
+            elif i == 24:
+                fact = 'Solar Panels Use Photons to Create Excitons and Electron Hole Pairs'
+
+            elif i == 25:
+                fact = 'In 1996 NASA Claimed They Found Life on Mars'
+
+            elif i == 26:
+                fact = 'Mankind Has Sent Over 40 Space Missions to Mars'
+
+            elif i == 27:
+                fact = 'There Are 3 Robots on Mars Right Now'
+
+            elif i == 28:
+                fact = 'Scientists Have Confirmed Liquid Water Once Flowed on Mars'
+
+            elif i == 29:
+                fact = 'Mars Is Red Because It’s a Rusty Planet'
+
+            elif i == 30:
+                fact = 'Mars Has Seasons like Earth, but with More Extreme Weather'
+
+            elif i == 31:
+                fact = 'Galileo Almost Discovered Neptune in the 1600’s'
+
+            elif i == 32:
+                fact = 'Neptune Was First Observed in Berlin on September 23rd, 1846'
+
+            elif i == 33:
+                fact = 'The Discovery of Neptune was a Big Victory for Science and Math'
+
+            elif i == 34:
+                fact = 'Neptune is 17 Times as Massive as Earth'
+
+            elif i == 35:
+                fact = 'Neptune Has 14 Moons'
+
+            elif i == 36:
+                fact = 'The Winds on Neptune Are Over 1300 Miles Per Hour'
+
+            elif i == 37:
+                fact = 'The Rings on Neptune Were Discovered by Voyager 2 in 1989'
+
+            elif i == 38:
+                fact = 'A Coat Isn’t Enough … It’s Over 300 Degrees Below Zero on Neptune'
+
+            elif i == 39:
+                fact = 'Neptune is the Farthest Planet from the Sun … Again'
+
+            elif i == 40:
+                fact = 'In Rome Saturn Was Celebrated with Saturnalia The Biggest Party'
+
+            elif i == 41:
+                fact = 'Saturn is 95 Times More Massive Than Earth'
+
+            elif i == 42:
+                fact = 'The Center of Saturn is Hot – Over 20,000 Degrees Fahrenheit'
+
+            elif i == 43:
+                fact = 'Saturn Is Not the Only Planet with Rings'
+
+            elif i == 44:
+                fact = 'Saturn’s Moon Phoebe Orbits In The Opposite Direction'
+
+            elif i == 45:
+                fact = 'Saturn Has Over 100 Moons and Moonlets'
+
+            elif i == 46:
+                fact = 'Saturn’s Moon Enceladus May Have Life On It'
+
+            elif i == 47:
+                fact = 'Winds On Saturn Are Over 1,000 Miles Per Hour'
+
+            elif i == 48:
+                fact = 'Jupiter Was Named Over 2,000 Years Ago'
+
+            elif i == 49:
+                fact = 'Jupiter is 2.5 Times As Massive As All the Other Planets Combined'
+
+            elif i == 50:
+                fact = 'Jupiter Generates As Much Energy As it Gets from the Sun'
+
+            elif i == 51:
+                fact = 'Saturn Is Not the Only Planet with Rings, Jupiter Has 4 Rings'
+
+            elif i == 52:
+                fact = 'The Wind on Jupiter is Over 200 Miles Per Hour'
+
+            elif i == 53:
+                fact = 'Galileo Discovered Jupiter’s Moons in 1610'
+
+            elif i == 54:
+                fact = 'The Name Uranus is Over 2,500 Years Old'
+
+            elif i == 55:
+                fact = 'Uranus Was One of the Last Planets to Be Found in the 1700’s'
+
+            elif i == 56:
+                fact = 'Uranus Receives 1/400th the Energy that Earth Receives from the Sun'
+
+            elif i == 57:
+                fact = 'Brrrr … Uranus is over 350 Degrees Below Zero'
+
+            elif i == 58:
+                fact = 'Uranus Has 27 Moons and 11 Rings'
+
+            elif i == 59:
+                fact = 'Uranus Has Winds Over 500 Miles Per Hour'
+
+            elif i == 60:
+                fact = 'William Herschel Discovered Uranus in 1781'
 
             else:
-                fact = ''
+                fact = 'The human brain can continue to live without oxygen supply for 4 - 6 minutes, after which ' \
+                       'it slowly starts dying.'
 
             return fact
 
         elif travel == 1 or interesting == 14:
-            i = random.random() * 9
+            i = int(random.random()) * 9
             if i == 0:
-                fact = ''
+                fact = 'Travel can help improve your problem-solving skills.'
 
             elif i == 1:
-                fact = ''
+                fact = 'One out of eight jobs in the U.S. depends on travel and tourism.'
 
             elif i == 2:
-                fact = ''
+                fact = 'Taking a vacation can lower your risk of heart disease.'
 
             elif i == 3:
-                fact = ''
+                fact = 'Studies show that money spent on travel makes you happier than money spent on material goods.'
 
             elif i == 4:
-                fact = ''
+                fact = 'Benefits of travel are almost immediate. After only a day or two, 89% of ' \
+                       'people experience significant drops in stress.'
 
             elif i == 5:
-                fact = ''
+                fact = 'Travel has been shown to help aid those suffering from depression.'
 
             elif i == 6:
-                fact = ''
+                fact = 'The shortest airline flight available for purchase lasts two minutes and runs from the ' \
+                       'Scottish island of Westray to Papa Westray.'
 
             elif i == 7:
-                fact = ''
+                fact = 'The largest hotel in the world is the Izmailovo Hotel in Russia. It could accommodate ' \
+                       'over 7,500 guests.'
 
             elif i == 8:
-                fact = ''
+                fact = 'The most expensive hotel room in the world costs $83,200 a night at the Royal Penthouse ' \
+                       'Suite in Geneva at Hotel President Wilson'
 
             elif i == 9:
-                fact = ''
+                fact = 'France is the most visited country in the world.'
 
             else:
-                fact = ''
+                fact = 'Couples who travel together have reported increased feelings of intimacy.'
 
             return fact
 
         else:
-            fact = ''
+            fact = 'Travel can also make you smarter.'
             return fact
 
         return fact
