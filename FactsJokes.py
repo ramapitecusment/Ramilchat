@@ -3,312 +3,696 @@ import random
 def facts(entities, entity, values):
     try:
         fact = ""
-        i = int(random.random() * 100)
-
-
-
-        if i == 1:
-            fact = ""
-
-        elif i == 2:
-            fact = ""
-
-        elif i == 3:
-            fact = ""
-
-        elif i == 4:
-            fact = ""
-
-        elif i == 5:
-            fact = ""
-
-        elif i == 6:
-            fact = ""
-
-        elif i == 7:
-            fact = ""
-
-        elif i == 8:
-            fact = ""
-
-        elif i == 9:
-            fact = ""
-
-        elif i == 10:
-            fact = ""
-
-        elif i == 11:
-            fact = ""
-
-        elif i == 12:
-            fact = ""
-
-        elif i == 13:
-            fact = ""
-
-        elif i == 14:
-            fact = ""
-
-        elif i == 15:
-            fact = ""
-
-        elif i == 16:
-            fact = ""
-
-        elif i == 17:
-            fact = ""
-
-        elif i == 18:
-            fact = ""
-
-        elif i == 19:
-            fact = ""
-
-        elif i == 20:
-            fact = ""
-
-        elif i == 21:
-            fact = ""
-
-        elif i == 22:
-            fact = ""
-
-        elif i == 23:
-            fact = ""
-
-        elif i == 24:
-            fact = ""
-
-        elif i == 25:
-            fact = ""
-
-        elif i == 26:
-            fact = ""
-
-        elif i == 27:
-            fact = ""
-
-        elif i == 28:
-            fact = ""
-
-        elif i == 29:
-            fact = ""
-
-        elif i == 30:
-            fact = ""
-
-        elif i == 31:
-            fact = ""
-
-        elif i == 32:
-            fact = ""
-
-        elif i == 33:
-            fact = ""
-
-        elif i == 34:
-            fact = ""
-
-        elif i == 35:
-            fact = ""
-
-        elif i == 36:
-            fact = ""
-
-        elif i == 37:
-            fact = ""
-
-        elif i == 38:
-            fact = ""
-
-        elif i == 39:
-            fact = ""
-
-        elif i == 40:
-            fact = ""
-
-        elif i == 41:
-            fact = ""
-
-        elif i == 42:
-            fact = ""
-
-        elif i == 43:
-            fact = ""
-
-        elif i == 44:
-            fact = ""
-
-        elif i == 45:
-            fact = ""
-
-        elif i == 46:
-            fact = ""
-
-        elif i == 47:
-            fact = ""
-
-        elif i == 48:
-            fact = ""
-
-        elif i == 49:
-            fact = ""
-
-        elif i == 50:
-            fact = ""
-
-        elif i == 51:
-            fact = ""
-
-        elif i == 52:
-            fact = ""
-
-        elif i == 53:
-            fact = ""
-
-        elif i == 54:
-            fact = ""
-
-        elif i == 55:
-            fact = ""
-
-        elif i == 56:
-            fact = ""
-
-        elif i == 57:
-            fact = ""
-
-        elif i == 58:
-            fact = ""
-
-        elif i == 59:
-            fact = ""
-
-        elif i == 60:
-            fact = ""
-
-        elif i == 61:
-            fact = ""
-
-        elif i == 62:
-            fact = ""
-
-        elif i == 63:
-            fact = ""
-
-        elif i == 64:
-            fact = ""
-
-        elif i == 65:
-            fact = ""
-
-        elif i == 66:
-            fact = ""
-
-        elif i == 67:
-            fact = ""
-
-        elif i == 68:
-            fact = ""
-
-        elif i == 69:
-            fact = ""
-
-        elif i == 70:
-            fact = ""
-
-        elif i == 71:
-            fact = ""
-
-        elif i == 72:
-            fact = ""
-
-        elif i == 73:
-            fact = ""
-
-        elif i == 74:
-            fact = ""
-
-        elif i == 75:
-            fact = ""
-
-        elif i == 76:
-            fact = ""
-
-        elif i == 77:
-            fact = ""
-
-        elif i == 78:
-            fact = ""
-
-        elif i == 79:
-            fact = ""
-
-        elif i == 80:
-            fact = ""
-
-        elif i == 81:
-            fact = ""
-
-        elif i == 82:
-            fact = ""
-
-        elif i == 83:
-            fact = ""
-
-        elif i == 84:
-            fact = ""
-
-        elif i == 85:
-            fact = ""
-
-        elif i == 86:
-            fact = ""
-
-        elif i == 87:
-            fact = ""
-
-        elif i == 88:
-            fact = ""
-
-        elif i == 89:
-            fact = ""
-
-        elif i == 90:
-            fact = ""
-
-        elif i == 91:
-            fact = ""
-
-        elif i == 92:
-            fact = ""
-
-        elif i == 93:
-            fact = ""
-
-        elif i == 94:
-            fact = ""
-
-        elif i == 95:
-            fact = ""
-
-        elif i == 96:
-            fact = ""
-
-        elif i == 97:
-            fact = ""
-
-        elif i == 98:
-            fact = ""
-
-        elif i == 99:
-            fact = ""
-
-        elif i == 100:
-            fact = ""
+        beauty = 0
+        celebrity = 0
+        disaster = 0
+        fashion = 0
+        food = 0
+        health = 0
+        history = 0
+        hot = 0
+        kids = 0
+        lifestyle = 0
+        nature = 0
+        personal = 0
+        place = 0
+        science = 0
+        travel = 0
+        interesting = -1
+
+        fact_type = str(values[entities.index(entity)])
+        if (fact_type == "beauty fact") or (fact_type == "beauty facts") \
+                or (fact_type == "fact about beauty") or (fact_type == "facts about beauty"):
+            beauty = 1
+
+        elif (fact_type == "celebrity fact") or (fact_type == "celebrity facts") \
+                or (fact_type == "fact about celebrity") or (fact_type == "facts about celebrity") \
+                or (fact_type == "fact about celebrities") or (fact_type == "facts about celebrities"):
+            celebrity = 1
+
+        elif (fact_type == "disaster fact") or (fact_type == "disaster facts") \
+                or (fact_type == "fact about disaster") or (fact_type == "facts about disaster") \
+                or (fact_type == "fact about disasteres") or (fact_type == "facts about disasteres"):
+            disaster = 1
+
+        elif (fact_type == "fashion fact") or (fact_type == "fashion facts") \
+                or (fact_type == "fact about fashion") or (fact_type == "facts about fashion"):
+            fashion = 1
+
+        elif (fact_type == "food fact") or (fact_type == "food facts") \
+                or (fact_type == "fact about food") or (fact_type == "facts about food"):
+            food = 1
+
+        elif (fact_type == "health fact") or (fact_type == "health facts") \
+                or (fact_type == "fact about health") or (fact_type == "facts about health"):
+            health = 1
+
+        elif (fact_type == "history fact") or (fact_type == "history facts") \
+                or (fact_type == "fact about history") or (fact_type == "facts about history")\
+                or (fact_type == "historian fact") or (fact_type == "historian facts"):
+            history = 1
+
+        elif (fact_type == "hot fact") or (fact_type == "hot facts"):
+            hot = 1
+
+        elif (fact_type == "kid fact") or (fact_type == "kid facts") \
+                or (fact_type == "fact about kid") or (fact_type == "facts about kid")\
+                or (fact_type == "kids fact") or (fact_type == "kids facts") \
+                or (fact_type == "fact about kids") or (fact_type == "facts about kids"):
+            kids = 1
+
+        elif (fact_type == "lifestyle fact") or (fact_type == "lifestyle facts") \
+                or (fact_type == "fact about lifestyle") or (fact_type == "facts about lifestyle"):
+            lifestyle = 1
+
+        elif (fact_type == "nature fact") or (fact_type == "nature facts") \
+                or (fact_type == "fact about nature") or (fact_type == "facts about nature")\
+                or (fact_type == "biological fact") or (fact_type == "biological facts") \
+                or (fact_type == "fact about biology") or (fact_type == "facts about biology"):
+            nature = 1
+
+        elif (fact_type == "personal fact") or (fact_type == "personal facts") \
+                or (fact_type == "fact about personal") or (fact_type == "facts about personal")\
+                or (fact_type == "person fact") or (fact_type == "person facts") \
+                or (fact_type == "fact about person") or (fact_type == "facts about person"):
+            personal = 1
+
+        elif (fact_type == "place fact") or (fact_type == "place facts") \
+                or (fact_type == "fact about place") or (fact_type == "facts about place") \
+                or (fact_type == "fact about places") or (fact_type == "facts about places"):
+            place = 1
+
+        elif (fact_type == "science fact") or (fact_type == "science facts") \
+                or (fact_type == "fact about science") or (fact_type == "facts about science")\
+                or (fact_type == "scientific fact") or (fact_type == "scientific facts"):
+            science = 1
+
+        elif (fact_type == "travel fact") or (fact_type == "travel facts") \
+                or (fact_type == "fact about travel") or (fact_type == "facts about travel")\
+                or (fact_type == "traveling fact") or (fact_type == "traveling facts"):
+            travel = 1
 
         else:
-            fact = ""
+            interesting = int(random.random() * 14)
+
+        if beauty == 1 or interesting == 0:
+            i = random.random() * 9
+            if i == 0:
+                fact = 'Lipstick was an essential item in World War II'
+
+            elif i == 1:
+                fact = 'The left side of the face is prettier than the right'
+
+            elif i == 2:
+                fact = 'Kitchen beauty treatments began in the middle ages'
+
+            elif i == 3:
+                fact = 'Maybelline was named after a girl called Mable'
+
+            elif i == 4:
+                fact = 'Believe it or not, back in the 1930s, radioactive beauty products were quite popular.'
+
+            elif i == 5:
+                fact = 'A 1991 study proved that the female politicians who employed the services of a ' \
+                       'professional makeup artists and photographers were 30% more likely to win people’s votes.'
+
+            elif i == 6:
+                fact = 'Max Factor began his cosmetics business when he was manufacturing greasepaint ' \
+                       'for stage actors and actresses.\n' \
+                       'It was also Max factor, incidentally, who coined the phrase makeup. ' \
+                       'Until then, it had always been referred to simply as cosmetics.'
+
+            elif i == 7:
+                fact = 'A study conducted by a psychologist Maria Agthe found that the very attractive looking ' \
+                       'applicants for graduate scholarships received less favourable reviews from interviewers.'
+
+            elif i == 8:
+                fact = 'The Egyptians used to drink their perfume.'
+
+            elif i == 9:
+                fact = 'It has been proved that women are more attracted to men who attract the attention of ' \
+                       'other women. British psychologist Benedict Jones found that women find a man more attractive ' \
+                       'when he is being smiled at by other women.'
+
+            else:
+                fact = 'Beautiful people make about 5% more than their average-looking colleagues.'
+
+            return fact
+
+        elif celebrity == 1 or interesting == 1:
+            i = random.random() * 9
+            if i == 0:
+                fact = 'George Washington Became an Official Surveyor When He Was 17 Years Old'
+
+            elif i == 1:
+                fact = 'George Washington Was Only 20 When He Took over a 1,000 Acre Estate'
+
+            elif i == 2:
+                fact = 'Einstein Created Modern Physics With 4 Papers in 1 Miracle Year,'
+
+            elif i == 3:
+                fact = 'In 3 Years Albert Einstein Went from Obscurity to Celebrity'
+
+            elif i == 4:
+                fact = 'Albert Einstein Read Euclid and Kant When He Was 10 Years Old'
+
+            elif i == 5:
+                fact = 'Albert Einstein Failed His First Entrance Exam to College in 1895'
+
+            elif i == 6:
+                fact = 'Cleopatra Was Not Egyptian, She Was Greek'
+
+            elif i == 7:
+                fact = 'Christopher Columbus Taught Himself 3 Languages'
+
+            elif i == 8:
+                fact = 'When he was young, Quentin Tarantino used to watch an average of 200 theater movies per year.'
+
+            elif i == 9:
+                fact = 'As a child, Johnny Depp was allergic to chocolate.'
+
+            elif i == 10:
+                fact = 'Orlando Bloom has swinophobia, which is a fear of pigs!'
+
+            elif i == 11:
+                fact = 'Bruce Willis admits to taking drugs as a teenager.'
+
+            elif i == 12:
+                fact = 'Morgan Freeman has a private pilot’s license, which he earned at the age of 65!'
+
+            elif i == 13:
+                fact = 'Rihanna’s first name is Robyn.'
+
+            elif i == 14:
+                fact = 'Cleopatra Was the Last Pharaoh of Egypt'
+
+            else:
+                fact = 'Wayne Rooney was only sixteen years old when he first played for Everton.'
+
+            return fact
+
+        elif disaster == 1 or interesting == 2:
+            i = random.random() * 9
+            if i == 0:
+                fact = '250,000 Jews Were Killed in Europe Long Before the Holocaust'
+
+            elif i == 1:
+                fact = 'Katrina Was the Strongest Hurricane Ever Recorded on the Gulf'
+
+            elif i == 2:
+                fact = 'There Were Only Enough Lifeboats for 1,178 People on The Titanic'
+
+            elif i == 3:
+                fact = 'It Took Over 70 Years for the Titanic Wreck to Be Found'
+
+            elif i == 4:
+                fact = 'When Storms Produce More Than One Tornado It’s Called an ‘Outbreak’'
+
+            elif i == 5:
+                fact = 'Tornadoes Have Been Witnessed on Every Continent Except Antarctica'
+
+            elif i == 6:
+                fact = 'Up to 10,000 people die a year as a result of an earthquake.'
+
+            elif i == 7:
+                fact = 'Hurricanes have winds of at least 74 miles per hour.'
+
+            elif i == 8:
+                fact = 'Floods are the number one deadly disaster in the United States accounting for over ' \
+                       '46 percent of disaster related deaths according to disaster facts.'
+
+            elif i == 9:
+                fact = 'The state that has the largest risk for tsunamis is Hawaii with over one a year.'
+
+            else:
+                fact = 'Every year over 25.8 million people are affected by a natural disaster across the world.'
+
+            return fact
+
+        elif fashion == 1 or interesting == 3:
+            i = random.random() * 9
+            if i == 0:
+                fact = 'Did you know that in 15th century, being pregnant was considered as fashionable and if girls ' \
+                       'weren’t pregnant, they would hide pillows under their dresses to fake a baby bump?'
+
+            elif i == 1:
+                fact = 'In the 18th century, high heels were so much wide-spread that even children wore it. '
+
+            elif i == 2:
+                fact = 'Completely unbelievable, but it is a fact that the first ever fashion magazine named ' \
+                       'Le Mercure Galant was aimed at male audience. The magazine was published in 1678, ' \
+                       'while only 16 years later a fashion magazine for women appeared in the sale. '
+
+            elif i == 3:
+                fact = 'Trends for skirts were substantially influenced by the invention of automobile in 18-19th ' \
+                       'century. After the invention skirts became shorter in order to allow women easily and ' \
+                       'comfortably step into automobile. '
+
+            elif i == 4:
+                fact = 'How would you feel if wearing a hat was a mandatory requirement coming from your government? ' \
+                       'You think it’s funny? Not at all. Elizabeth I loved hats so much that she made it ' \
+                       'compulsory for all females over the age of 7 to wear hats on Sundays and holidays. ' \
+                       'Anyone who refused to do so was stiffly fined.'
+
+            elif i == 5:
+                fact = 'Thanks to Napoleon Bonaparte for buttons on jacket sleeves which he ordered to attach ' \
+                       'to prevent soldiers from wiping off their runny noses on their sleeves.'
+
+            elif i == 6:
+                fact = 'The world’s most valuable fashion brand is Louis Vuitton with the worth of $23 billion.'
+
+            elif i == 7:
+                fact = 'There is a name for a person who collects ties - "Grabatologist".'
+
+            elif i == 8:
+                fact = 'One billion rabbits are killed each year so that their fur can be used in clothing or ' \
+                       'for lures in fly-fishing or trim on craft items.'
+
+            elif i == 9:
+                fact = 'The first official Fashion Week started in 1943 in New York. Its main purpose was to distract' \
+                       ' the attention away from French fashion during World War II and kickstart the way ' \
+                       'for American designers.'
+
+            else:
+                fact = 'All women should be thanking Mary Phelps, a New York socialite, for creating the modern bra. ' \
+                       'The ones she made and patented in 1914 were very unlike the ones we wear today, though. ' \
+                       'Hers were made of handkerchiefs.'
+
+            return fact
+
+        elif food == 1 or interesting == 4:
+            i = random.random() * 9
+            if i == 0:
+                fact = 'The average person eats for a life of 20-25 tons of food.'
+
+            elif i == 1:
+                fact = 'In Japan, sold ice cream flavored octopus, buffalo tongue, cactus, chicken wings and crab.'
+
+            elif i == 2:
+                fact = 'In Colombia, the cinema instead of popcorn offers a bag of fried giant ants.'
+
+            elif i == 3:
+                fact = 'Want kebab alligator? Go to South Louisiana, USA.'
+
+            elif i == 4:
+                fact = 'On the streets of Indonesia sell smoked bats. '
+
+            elif i == 5:
+                fact = 'In Japan, the jellyfish are exquisite delicacy, despite the presence of a dangerous poison. ' \
+                       'If the dish to cook properly, death is inevitable.'
+
+            elif i == 6:
+                fact = 'And in a restaurant in New York you can submit an omelet worth $ 1,000. It consists of an ' \
+                       'entire lobster and 280 grams of caviar, eggs, potatoes and whiskey. '
+
+            elif i == 7:
+                fact = 'Originally Carrots are purple in color.'
+
+            elif i == 8:
+                fact = 'The most stolen food in the world is cheese.'
+
+            elif i == 9:
+                fact = 'Honey can last for 3000 years, it is the only food item that will never get rotten.'
+
+            else:
+                fact = 'The juice that contains a small amount of alcohol is Orange juice.'
+
+            return fact
+
+        elif health == 1 or interesting == 5:
+            i = random.random() * 9
+            if i == 0:
+                fact = '20 Million Americans Have Died from Smoking in the Last 50 Years'
+
+            elif i == 1:
+                fact = '1 in 10 Deaths of 20-64 Year Olds Are due to Alcohol'
+
+            elif i == 2:
+                fact = '93 Million Americans are Affected by Obesity'
+
+            elif i == 3:
+                fact = 'Excess Body Fat Causes Type 2 Diabetes in 77% of Women and 64% of Men'
+
+            elif i == 4:
+                fact = 'Marijuana is the Most Widely Used Drug in the World'
+
+            elif i == 5:
+                fact = 'Marijuana Accounts for 48% of Drug Arrest in the United States'
+
+            elif i == 6:
+                fact = '1/3 of all cancers are preventable.'
+
+            elif i == 7:
+                fact = '33% of those who drink four or more caffeinated beverages, such as soda or coffee,' \
+                       ' daily are put at a higher risk for sleep apnea'
+
+            elif i == 8:
+                fact = 'On average, right-handed people live 9 years longer than left-handed people.'
+
+            elif i == 9:
+                fact = 'Out of the 206 bones in the human adult’s body, 106 are in the hands and feet.'
+
+            else:
+                fact = 'During a sneeze, all of your bodily functions momentarily stop, even your heart.'
+
+            return fact
+
+        elif history == 1 or interesting == 6:
+            i = random.random() * 9
+            if i == 0:
+                fact = 'Cleopatra Was the Last Pharaoh of Egypt'
+
+            elif i == 1:
+                fact = ''
+
+            elif i == 2:
+                fact = ''
+
+            elif i == 3:
+                fact = ''
+
+            elif i == 4:
+                fact = ''
+
+            elif i == 5:
+                fact = ''
+
+            elif i == 6:
+                fact = ''
+
+            elif i == 7:
+                fact = ''
+
+            elif i == 8:
+                fact = ''
+
+            elif i == 9:
+                fact = ''
+
+            else:
+                fact = ''
+
+            return fact
+
+        elif hot == 1 or interesting == 7:
+            i = random.random() * 9
+            if i == 0:
+                fact = ''
+
+            elif i == 1:
+                fact = ''
+
+            elif i == 2:
+                fact = ''
+
+            elif i == 3:
+                fact = ''
+
+            elif i == 4:
+                fact = ''
+
+            elif i == 5:
+                fact = ''
+
+            elif i == 6:
+                fact = ''
+
+            elif i == 7:
+                fact = ''
+
+            elif i == 8:
+                fact = ''
+
+            elif i == 9:
+                fact = ''
+
+            else:
+                fact = ''
+
+            return fact
+
+        elif kids == 1 or interesting == 8:
+            i = random.random() * 9
+            if i == 0:
+                fact = ''
+
+            elif i == 1:
+                fact = ''
+
+            elif i == 2:
+                fact = ''
+
+            elif i == 3:
+                fact = ''
+
+            elif i == 4:
+                fact = ''
+
+            elif i == 5:
+                fact = ''
+
+            elif i == 6:
+                fact = ''
+
+            elif i == 7:
+                fact = ''
+
+            elif i == 8:
+                fact = ''
+
+            elif i == 9:
+                fact = ''
+
+            else:
+                fact = ''
+
+            return fact
+
+        elif lifestyle == 1 or interesting == 9:
+            i = random.random() * 9
+            if i == 0:
+                fact = ''
+
+            elif i == 1:
+                fact = ''
+
+            elif i == 2:
+                fact = ''
+
+            elif i == 3:
+                fact = ''
+
+            elif i == 4:
+                fact = ''
+
+            elif i == 5:
+                fact = ''
+
+            elif i == 6:
+                fact = ''
+
+            elif i == 7:
+                fact = ''
+
+            elif i == 8:
+                fact = ''
+
+            elif i == 9:
+                fact = ''
+
+            else:
+                fact = ''
+
+            return fact
+
+        elif nature == 1 or interesting == 10:
+            i = random.random() * 9
+            if i == 0:
+                fact = ''
+
+            elif i == 1:
+                fact = ''
+
+            elif i == 2:
+                fact = ''
+
+            elif i == 3:
+                fact = ''
+
+            elif i == 4:
+                fact = ''
+
+            elif i == 5:
+                fact = ''
+
+            elif i == 6:
+                fact = ''
+
+            elif i == 7:
+                fact = ''
+
+            elif i == 8:
+                fact = ''
+
+            elif i == 9:
+                fact = ''
+
+            else:
+                fact = ''
+
+            return fact
+
+        elif personal == 1 or interesting == 11:
+            i = random.random() * 9
+            if i == 0:
+                fact = ''
+
+            elif i == 1:
+                fact = ''
+
+            elif i == 2:
+                fact = ''
+
+            elif i == 3:
+                fact = ''
+
+            elif i == 4:
+                fact = ''
+
+            elif i == 5:
+                fact = ''
+
+            elif i == 6:
+                fact = ''
+
+            elif i == 7:
+                fact = ''
+
+            elif i == 8:
+                fact = ''
+
+            elif i == 9:
+                fact = ''
+
+            else:
+                fact = ''
+
+            return fact
+
+        elif place == 1 or interesting == 12:
+            i = random.random() * 9
+            if i == 0:
+                fact = ''
+
+            elif i == 1:
+                fact = ''
+
+            elif i == 2:
+                fact = ''
+
+            elif i == 3:
+                fact = ''
+
+            elif i == 4:
+                fact = ''
+
+            elif i == 5:
+                fact = ''
+
+            elif i == 6:
+                fact = ''
+
+            elif i == 7:
+                fact = ''
+
+            elif i == 8:
+                fact = ''
+
+            elif i == 9:
+                fact = ''
+
+            else:
+                fact = ''
+
+            return fact
+
+        elif science == 1 or interesting == 13:
+            i = random.random() * 9
+            if i == 0:
+                fact = ''
+
+            elif i == 1:
+                fact = ''
+
+            elif i == 2:
+                fact = ''
+
+            elif i == 3:
+                fact = ''
+
+            elif i == 4:
+                fact = ''
+
+            elif i == 5:
+                fact = ''
+
+            elif i == 6:
+                fact = ''
+
+            elif i == 7:
+                fact = ''
+
+            elif i == 8:
+                fact = ''
+
+            elif i == 9:
+                fact = ''
+
+            else:
+                fact = ''
+
+            return fact
+
+        elif travel == 1 or interesting == 14:
+            i = random.random() * 9
+            if i == 0:
+                fact = ''
+
+            elif i == 1:
+                fact = ''
+
+            elif i == 2:
+                fact = ''
+
+            elif i == 3:
+                fact = ''
+
+            elif i == 4:
+                fact = ''
+
+            elif i == 5:
+                fact = ''
+
+            elif i == 6:
+                fact = ''
+
+            elif i == 7:
+                fact = ''
+
+            elif i == 8:
+                fact = ''
+
+            elif i == 9:
+                fact = ''
+
+            else:
+                fact = ''
+
+            return fact
+
+        else:
+            fact = ''
+            return fact
 
         return fact
 
@@ -319,6 +703,7 @@ def jokes(entities, entity, values):
     try:
         joke = ""
         i = int(random.random() * 88)
+
         if i == 1:
             joke = "Can a kangaroo jump higher than a house? \n" \
                    "Of course, a house doesn’t jump at all."
@@ -772,11 +1157,10 @@ def jokes(entities, entity, values):
             joke = 'Don’t be sad when a bird craps on your head. Be happy that dogs can’t fly.'
 
         else:
-            joke = ""
+            joke = 'Q: Is Google a he or a she?\n' \
+                   'A: A she, no doubt, because it won‘t let you finish your sentence without suggesting other ideas.'
 
         return joke
 
     except:
         pass
-
-print(jokes(1,1,1))
