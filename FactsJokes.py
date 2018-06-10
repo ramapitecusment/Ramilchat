@@ -21,6 +21,7 @@ def facts(entities, entity, values):
         interesting = -1
 
         fact_type = str(values[entities.index(entity)])
+
         if (fact_type == "beauty fact") or (fact_type == "beauty facts") \
                 or (fact_type == "fact about beauty") or (fact_type == "facts about beauty"):
             beauty = 1
@@ -93,7 +94,7 @@ def facts(entities, entity, values):
             travel = 1
 
         else:
-            interesting = int(random.random()) * 14
+            interesting = int(random.random() * 14)
 
         if beauty == 1 or interesting == 0:
             i = int(random.random()) * 9
