@@ -36,7 +36,7 @@ from Weather import weather
 
 app = Flask(__name__)
 
-PAGE_ACCESS_TOKEN = "EAAjPlo1AqfoBAOdXX7AJdBZBsnZA20cwklTyRnaZAxoZAA5u7vUZAHjH0MEy8xKx9zhZAXV7zr0eYArvVsreXzYntBlSD6AYsBCFT6StaCBvmND82xS3w4bbISblgcbPse83fLtB7TEjqfIgKqzZAoKlYwN69YZBafTZCE2GUvsDygQZDZD"
+PAGE_ACCESS_TOKEN = "EAAjPlo1AqfoBAErKwmGZAt9uox0ehBwztUsisgcZBvpA3O3aeFKZBZC1QzzzfYyJIOlEq8CfkKHej1aWeGZBSaR279obYtaLhPJjt0ndZCqVlwgSEhGO7eyJxLhjZB1gFTu1TvBYXNZBChsdXQofrMbPCFKQonUZBRMnANqxabm8fQAZDZD"
 bot = Bot(PAGE_ACCESS_TOKEN)
 
 @app.route('/', methods=['GET'])
