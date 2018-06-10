@@ -97,7 +97,7 @@ def facts(entities, entity, values):
             interesting = int(random.random() * 14)
 
         if beauty == 1 or interesting == 0:
-            i = int(random.random()) * 9
+            i = int(random.random() * 9)
             if i == 0:
                 fact = 'Lipstick was an essential item in World War II'
 
@@ -141,7 +141,7 @@ def facts(entities, entity, values):
             return fact
 
         elif celebrity == 1 or interesting == 1:
-            i = int(random.random()) * 14
+            i = int(random.random() * 14)
             if i == 0:
                 fact = 'George Washington Became an Official Surveyor When He Was 17 Years Old'
 
@@ -193,7 +193,7 @@ def facts(entities, entity, values):
             return fact
 
         elif disaster == 1 or interesting == 2:
-            i = int(random.random()) * 9
+            i = int(random.random() * 9)
             if i == 0:
                 fact = '250,000 Jews Were Killed in Europe Long Before the Holocaust'
 
@@ -231,7 +231,7 @@ def facts(entities, entity, values):
             return fact
 
         elif fashion == 1 or interesting == 3:
-            i = int(random.random()) * 9
+            i = int(random.random() * 9)
             if i == 0:
                 fact = 'Did you know that in 15th century, being pregnant was considered as fashionable and if girls ' \
                        'weren’t pregnant, they would hide pillows under their dresses to fake a baby bump?'
@@ -282,7 +282,7 @@ def facts(entities, entity, values):
             return fact
 
         elif food == 1 or interesting == 4:
-            i = int(random.random()) * 9
+            i = int(random.random() * 9)
             if i == 0:
                 fact = 'The average person eats for a life of 20-25 tons of food.'
 
@@ -321,7 +321,7 @@ def facts(entities, entity, values):
             return fact
 
         elif health == 1 or interesting == 5:
-            i = int(random.random()) * 9
+            i = int(random.random() * 9)
             if i == 0:
                 fact = '20 Million Americans Have Died from Smoking in the Last 50 Years'
 
@@ -359,7 +359,7 @@ def facts(entities, entity, values):
             return fact
 
         elif history == 1 or interesting == 6:
-            i = int(random.random()) * 19
+            i = int(random.random() * 19)
             if i == 0:
                 fact = 'Cleopatra Was the Last Pharaoh of Egypt'
 
@@ -434,7 +434,7 @@ def facts(entities, entity, values):
             return fact
 
         elif hot == 1 or interesting == 7:
-            i = int(random.random()) * 20
+            i = int(random.random() * 20)
             if i == 0:
                 fact = '20 Million Americans Have Died from Smoking in the Last 50 Years'
 
@@ -512,7 +512,7 @@ def facts(entities, entity, values):
             return fact
 
         elif kids == 1 or interesting == 8:
-            i = int(random.random()) * 9
+            i = int(random.random() * 9)
             if i == 0:
                 fact = 'Former billionaire Chuck Feeney has given away over 99% of his 6.3 Billion dollars to help' \
                        ' under privileged kids go to college. He is now worth $2 million dollars.'
@@ -558,7 +558,7 @@ def facts(entities, entity, values):
             return fact
 
         elif lifestyle == 1 or interesting == 9:
-            i = int(random.random()) * 9
+            i = int(random.random() * 9)
             if i == 0:
                 fact = 'One of the popular hobbies among women is shopping. They will love to buy accessories ' \
                        'and fashion items that they do not need just because they are sold with discount promo.'
@@ -613,7 +613,7 @@ def facts(entities, entity, values):
             return fact
 
         elif nature == 1 or interesting == 10:
-            i = int(random.random()) * 21
+            i = int(random.random() * 21)
             if i == 0:
                 fact = 'Bald Eagles Build the Largest Tree Nests of Any Bird'
 
@@ -686,7 +686,7 @@ def facts(entities, entity, values):
             return fact
 
         elif personal == 1 or interesting == 11:
-            i = int(random.random()) * 9
+            i = int(random.random() * 9)
             if i == 0:
                 fact = 'The brain is more lively at night than during the day. Scientists don’t ' \
                        'recognize yet why this is.'
@@ -738,7 +738,7 @@ def facts(entities, entity, values):
             return fact
 
         elif place == 1 or interesting == 12:
-            i = int(random.random()) * 20
+            i = int(random.random() * 20)
             if i == 0:
                 fact = '6% of People in Ecuador Speak 1 of 13 Native Dialects'
 
@@ -809,7 +809,7 @@ def facts(entities, entity, values):
             return fact
 
         elif science == 1 or interesting == 13:
-            i = int(random.random()) * 60
+            i = int(random.random() * 60)
             if i == 0:
                 fact = 'The Earth Generates $72 Trillion of Goods and Services Each Year'
 
@@ -1000,7 +1000,7 @@ def facts(entities, entity, values):
             return fact
 
         elif travel == 1 or interesting == 14:
-            i = int(random.random()) * 9
+            i = int(random.random() * 9)
             if i == 0:
                 fact = 'Travel can help improve your problem-solving skills.'
 
