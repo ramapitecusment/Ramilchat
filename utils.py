@@ -1,7 +1,7 @@
 from wit import Wit
 from AmountOfMoney import amount_of_money
 
-access_token = "CCBDKWLQI322FY74JTVLURSJWOAEYOXP"
+access_token = "CGWUZCDKZRYBJ5UWGZI5C45N3VSAP5G7"
 client = Wit(access_token = access_token)
 
 def wit_response(message_text):
