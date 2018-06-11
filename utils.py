@@ -1,5 +1,4 @@
 from wit import Wit
-from AmountOfMoney import amount_of_money
 
 access_token = "CGWUZCDKZRYBJ5UWGZI5C45N3VSAP5G7"
 client = Wit(access_token = access_token)
