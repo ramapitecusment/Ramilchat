@@ -28,7 +28,7 @@ from HelloAndBuy import saythanks
 from LocalSearch import local_search
 from NotablePeople import person
 from Remind import remind
-from Search import search
+from Search import search_g
 from StartStop import start
 from StartStop import stop
 from Tips import tips
@@ -151,7 +151,7 @@ def webhook():
                             response = remind(entities, entity, values)
 
                         elif entity == 'google':
-                            response = search(entities, entity, values)
+                            response = search_g(entities, entity, values)
 
                         elif entity == 'notable_person':
                             response = person(entities, entity, values)
