@@ -1,6 +1,6 @@
 def events(entities, entity, values):
     try:
-        return "Hello from EVENTS!"
+        return "The next event is SOMMERFEST: 26th of June!"
 
     except:
         pass
