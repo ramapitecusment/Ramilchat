@@ -6,7 +6,7 @@ def hello(entities, entity, values):
             return "I am fine! What about you?"
         elif entity == 'greetings':
             if 'get_class' in entities:
-                return classes(entities, entity, values)
+                return str(classes(entities, entity, values))
             else:
                 return "Hi! How can I help you?"
     except:
