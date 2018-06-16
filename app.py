@@ -3,6 +3,7 @@ from flask import Flask, request,render_template, redirect
 from pymessenger import Bot
 from utils import wit_response
 from Administration import administration
+from Administration import docfind
 from AmountOfMoney import amount_of_money
 from calculator import calc
 from ClassScrapper import classes
@@ -98,6 +99,9 @@ def webhook():
 
                         elif entity == 'currency_1':
                             response = amount_of_money(entities, entity, values)
+
+                        elif entity == 'docfinder':
+                            response = docfind(entities, entity, values)
 
                         elif entity == 'tips':
                             response = tips(entities, entity, values)

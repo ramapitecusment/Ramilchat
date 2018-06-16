@@ -9,3 +9,11 @@ def administration(entities, entity, values):
 
     except:
         pass
+
+def docfind(entities, entity, values):
+    try:
+        if 'docfinder' in entities:
+            return 'visit https://www.docfinder.at . There you can find the nearest doctor. ' \
+                   'I hope you feel better soon!'
+    except:
+        pass
