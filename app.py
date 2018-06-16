@@ -2,6 +2,7 @@ import os, sys
 from flask import Flask, request,render_template, redirect
 from pymessenger import Bot
 from utils import wit_response
+from Administration import administration
 from AmountOfMoney import amount_of_money
 from calculator import calc
 from ClassScrapper import classes
@@ -126,9 +127,6 @@ def webhook():
                         elif entity == 'event':
                             response = events(entities, entity, values)
 
-                        elif entity == 'feeling':
-                            response = feeling(entities, entity, values)
-
                         elif entity == 'game':
                             response = games(entities, entity, values)
 
@@ -137,12 +135,6 @@ def webhook():
 
                         elif entity == 'love_q':
                             response = love_q(entities, entity, values)
-
-                        elif entity == 'love':
-                            response = love(entities, entity, values)
-
-                        elif entity == 'want_you':
-                            response = want_you(entities, entity, values)
 
                         elif entity == 'hobby':
                             response = hobby(entities, entity, values)
