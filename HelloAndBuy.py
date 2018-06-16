@@ -76,9 +76,9 @@ def saythanks(entities, entity, values):
 def because_a(entities, entity, values):
     try:
         if entity == 'because_a':
-            if 'negative' in entities:
+            if 'negative' in values:
                 return "I see. Everything will be fine!!!"
-            elif 'positive' in entities:
+            elif 'positive' in values:
                 return "I see."
             else:
                 return "I see."

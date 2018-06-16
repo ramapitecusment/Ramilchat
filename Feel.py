@@ -1,9 +1,9 @@
 def feeling(entities, entity, values):
     try:
         if entity == 'feeling':
-            if 'negative' in entities:
+            if 'negative' in values:
                 return "I see. Everything will be fine!!!"
-            elif 'positive' in entities:
+            elif 'positive' in values:
                 return "That's GOOD!!!"
             else:
                 return "I see."
