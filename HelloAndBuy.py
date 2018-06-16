@@ -1,7 +1,12 @@
+from ClassScrapper import classes
+
 def hello(entities, entity, values):
     try:
         if 'mood' in entities:
-            return "I am fine! What about you?"
+            if 'get_class' in entities:
+                return classes(entities, entity, values)
+            else:
+                return "I am fine! What about you?"
         elif entity == 'greetings':
             return "Hi! How can I help you?"
     except:
