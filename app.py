@@ -81,7 +81,7 @@ def webhook():
                         if entity == 'get_class':
                             response = classes(entities, entity, values)
                             if response == None:
-                                response = "Sorry! I didn't find this course..."
+                                response = "Sorry! I can not find this course..."
                             # response = "OK! This are your classes of {}: ".format(str(values[entities.index(entity)]))
 
                         elif entity == 'feeling':
