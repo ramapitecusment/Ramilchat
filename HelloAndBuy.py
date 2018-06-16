@@ -2,7 +2,9 @@ from ClassScrapper import classes
 
 def hello(entities, entity, values):
     try:
-        if 'mood' in entities:
+        if 'feeling' in entities:
+            return str(feeling(entities, 'feeling', values))
+        elif 'mood' in entities:
             return "I am fine! What about you?"
             if entity == 'greetings':
                 return "Hi! I am fine! What about you? :)"
