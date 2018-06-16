@@ -88,7 +88,7 @@ def link_crawler(start_url, link_regex, robots_url=None, user_agent='wswp',
             #for link in get_links(html) + links:
             #    datas.append(link)
             #return datas
-            result = 'The temperature is: ' + get_links(html)[0] + '. Feels like' + get_links(html)[1] + ". " + get_links(html)[2]
+            result = 'The temperature is: ' + get_links(html)[0] + '. Feels like ' + get_links(html)[1] + ". " + get_links(html)[2]
             return result
 
         else:
