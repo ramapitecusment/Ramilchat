@@ -5,7 +5,7 @@ def hello(entities, entity, values):
         if 'mood' in entities:
             return "I am fine! What about you?"
             if entity == 'greetings':
-                return "Hi! I am fine! What about you?"
+                return "Hi! I am fine! What about you? :)"
         elif entity == 'greetings':
             if 'get_class' in entities:
                 return str(classes(entities, 'get_class', values))
