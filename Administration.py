@@ -47,8 +47,8 @@ def before_leaving(entities, entity, values):
         if 'before_leaving' in entities:
             return '1. De-register your residence\n' \
                    '2. De-register for health insurance\n' \
-                   '3. Close bank account' \
-                   '4. Make sure all payments are done, hand in keys etc.' \
+                   '3. Close bank account\n' \
+                   '4. Make sure all payments are done, hand in keys etc.\n' \
                    'For more information contact: international@fh-joanneum.at'
     except:
         pass

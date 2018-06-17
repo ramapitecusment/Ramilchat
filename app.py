@@ -6,6 +6,7 @@ from Administration import docfind
 from Administration import mensa_hours
 from Administration import useful_inf_for_inc
 from Administration import fh
+from Administration import before_leaving
 from AmountOfMoney import amount_of_money
 from calculator import calc
 from ClassScrapper import classes
@@ -110,6 +111,9 @@ def webhook():
                             response = useful_inf_for_inc(entities, entity, values)
 
                         elif entity == 'fh':
+                            response = fh(entities, entity, values)
+
+                        elif entity == 'before_leaving':
                             response = fh(entities, entity, values)
 
                         elif entity == 'tips':
