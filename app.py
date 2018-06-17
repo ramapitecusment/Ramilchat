@@ -2,8 +2,10 @@ import os, sys
 from flask import Flask, request,render_template, redirect
 from pymessenger import Bot
 from utils import wit_response
-from Administration import administration
 from Administration import docfind
+from Administration import mensa_hours
+from Administration import useful_inf_for_inc
+from Administration import fh
 from AmountOfMoney import amount_of_money
 from calculator import calc
 from ClassScrapper import classes
@@ -13,8 +15,6 @@ from Events import events
 from FactsJokes import facts
 from FactsJokes import jokes
 from Feel import love_q
-from Feel import love
-from Feel import want_you
 from Feel import feeling
 from Games import games
 from HelloAndBuy import hello
@@ -102,6 +102,15 @@ def webhook():
 
                         elif entity == 'docfinder':
                             response = docfind(entities, entity, values)
+
+                        elif entity == 'mensa_hours':
+                            response = mensa_hours(entities, entity, values)
+
+                        elif entity == 'useful_inf_for_inc':
+                            response = useful_inf_for_inc(entities, entity, values)
+
+                        elif entity == 'fh':
+                            response = fh(entities, entity, values)
 
                         elif entity == 'tips':
                             response = tips(entities, entity, values)
