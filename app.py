@@ -114,7 +114,7 @@ def webhook():
                             response = fh(entities, entity, values)
 
                         elif entity == 'before_leaving':
-                            response = fh(entities, entity, values)
+                            response = before_leaving(entities, entity, values)
 
                         elif entity == 'tips':
                             response = tips(entities, entity, values)
