@@ -41,3 +41,14 @@ def fh(entities, entity, values):
             return 'https://www.fh-joanneum.at/en/'
     except:
         pass
+
+def before_leaving(entities, entity, values):
+    try:
+        if 'before_leaving' in entities:
+            return '1. De-register your residence\n' \
+                   '2. De-register for health insurance\n' \
+                   '3. Close bank account' \
+                   '4. Make sure all payments are done, hand in keys etc.' \
+                   'For more information contact: international@fh-joanneum.at'
+    except:
+        pass
