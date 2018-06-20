@@ -20,7 +20,7 @@ def get_robots_parser(robots_url):
 
 
 def get_links(html):
-    """ Using lxml and xpath to extract data from country pages. """
+    """ Using lxml and xpath to extract data from pages. """
     tree = fromstring(html)
     results = tree.xpath('//tr[position() <= 2]/td[1]/text()')
     position = tree.xpath('//tr/td[last()]/a[last()]/text()')[0]
