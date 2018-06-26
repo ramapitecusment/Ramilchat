@@ -52,6 +52,8 @@ You can find information on how to set up the above in the [Guide by Facebook](h
 
 ## Launch Server in Heruku
 
+BEFORE STARTING CREATING THE CHATBOT WATCH [THIS VIDEO](https://www.youtube.com/watch?v=uU4pjtcbFeg&index=1&list=PLyb_C2HpOQSC4M3lzzrql7DSppTeAxh-x)
+
 Install the Heroku CLI
 Download and install the Heroku CLI.
 
