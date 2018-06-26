@@ -19,7 +19,7 @@ Setup your Facebook Page
 Setup your Facebook Page
 This code assumes the above have been set up and trained according to the quickstart guide by Facebook.
 
-You can find information on how to set up the above in the Guide by Facebook.
+You can find information on how to set up the above in the [Guide by Facebook](https://developers.facebook.com/quickstarts/?platform=web).
 
 ##Launch Server in Heruku
 
