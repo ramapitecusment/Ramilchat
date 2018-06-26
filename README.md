@@ -1,9 +1,28 @@
 # Ramilchat
 #Wit Facebook Chatbot for international students
 
-A Python bot, that contains a Flask server designed to be deployed on Heroku. The application uses a bot made using the Python API from Wit.ai and the Facebook Messenger API.
+For years, in-person meetings and phone calls were the dominant means of communication in society and business. Nowadays, with the rise of the internet, a multitude of new options became available (email, social media, mobile apps or filling out a form on a website and waiting for a follow-up). However, recently, the rise of real-time messaging has led to a fundamental shift in how people prefer to communicate with one another. [1]
+	Chatbots are staring to become more and more popular, even more now that they can study, and answer questions in a shorter time. Our group is composed by international students, and we want to use this technology to support future international students in FH Joanneum, because we understand all difficulties living in a different country with different traditions. We conducted a survey between international students and we found that the biggest difficulties are:
+1.	Timetable changes;
+2.	Administrative questions;
+3.	Contacts of international office;
+4.	Working hours of Mensa;
+5.	Working hours of international office;
+6.	Additional information for incoming students;
+7.	Upcoming events;
+8.	How to find Moodle and Official website of FH Joanneum;
+9.	Currency of EUR;
+10.	Weather changes;
+11.	Etc.;
+Our main goal is to create a chatbot to make it easier for new students to adapt in a new environment. Therefore, we decided to implement most of the features mentioned above as well as simple conversation with users.
+In the future, the chatbot can be developed, trained, educated in a way that it will be able to answer almost every question of the student (not only incoming ones) and notify all students of FH Joanneum about:
+  1.	Exam dates;
+  2.	Deadlines;
+  3.	Grades;
+  4.	And other academic issues;
 
-The bot is designed to provide real-time weather updates on Messenger using the pywapi wrapper for the Weather.com API.
+
+A Python bot, that contains a Flask server designed to be deployed on Heroku. The application uses a bot made using the Python API from Wit.ai and the Facebook Messenger API.
 
 # Initial Installation
 Fork this repository and clone.
