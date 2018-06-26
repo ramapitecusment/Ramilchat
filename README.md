@@ -87,3 +87,7 @@ FB_PAGE_TOKEN = "your facebook page token"
 FB_VERIFY_TOKEN = "your webhook verification token"
 ```
 Finally go to the Facebook page you made and chat to the bot!
+
+# Results of the ChatBot:
+
+
