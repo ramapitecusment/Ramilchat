@@ -90,7 +90,7 @@ Finally go to the Facebook page you made and chat to the bot!
 
 # Results of the ChatBot:
 
-### Hi
+#### Hi
 Hi! How can I help you?
 ### How are you?
 Hi! I am fine! What about you? 🙂
