@@ -70,7 +70,58 @@ Use Git to clone ramilchat's source code to your local machine.
 $ heroku git:clone -a ramilchat
 $ cd ramilchat
 ```
-
+Hi
+### Hi! How can I help you?
+How are you?
+Hi! I am fine! What about you? 🙂
+I am also fine 🙂
+That's GOOD!!!
+What do you like?
+I like chatting.
+When is the next class mbs?
+11.07.2018 (Mittwoch) at 09:00 - 16:00 in K.WS46A.216 HS216
+Next class of mbs?
+11.07.2018 (Mittwoch) at 09:00 - 16:00 in K.WS46A.216 HS216
+I love Projarb1 course
+I see. That's GOOD!
+Next class of kwbdjwbdiwhd
+Sorry! I can not find this course...
+The weather on Kapfenberg today
+The temperature is: +13C. Feels like +13°C. overcast, no significant precipitation
+What is the weather tomorrow on Wien
+The temperature is: +15C. Feels like +15°C. overcast, no precipitation
+1 usd in kzt
+1 USD in KZT = 339.662
+100 usd in eur
+100 usd in EUR = 85.7396
+How can I find a doctor
+Visit https://www.docfinder.at . There you can find the nearest doctor. I hope you feel better soon!
+The next event in Kapfenberg
+The next event is SOMMERFEST: 28th of June!
+Arnold Schwarzenegger
+https://en.wikipedia.org/wiki/Arnold_Schwarzenegger
+What is the distance between Earth and Moon
+https://www.google.com/search?q=the+distance+between+Earth+and+Moon
+http://www.answers.com/Q/the_distance_between_Earth_and_Moon
+Working hours of mensa
+Monday to Thursday: 7:30-16:00;
+Friday: 7:30 - 19:00;
+Saturday: 9:30-13:30;
+Lunch menus: Monday to Friday: 11:00-15:00;
+What should before leaving
+https://www.google.com/search?q=What+should+before+leaving
+http://www.answers.com/Q/What_should_before_leaving
+What should I do before leaving
+1. De-register your residence
+2. De-register for health insurance
+3. Close bank account
+4. Make sure all payments are done, hand in keys etc.
+For more information contact: international@fh-joanneum.at
+Tell me a scientific fact
+The Name Uranus is Over 2,500 Years Old
+Tell me a joke
+Q: Is Google a he or a she?
+A: A she, no doubt, because it won‘t let you finish your sentence without suggesting other ideas.
 Deploy your changes
 Make some changes to the code you just cloned and deploy them to Heroku using Git.
 ```bash
