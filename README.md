@@ -31,7 +31,7 @@ A Python bot, that contains a Flask server designed to be deployed on Heroku. Th
 
 # Initial Installation
 
-BEFORE STARTING CREATING THE CHATBOT WATCH [THIS VIDEO TUTORIAL](https://www.youtube.com/watch?v=uU4pjtcbFeg&index=1&list=PLyb_C2HpOQSC4M3lzzrql7DSppTeAxh-x)
+BEFORE STARTING CREATING THE CHATBOT WATCH [THIS VIDEO TUTORIAL](https://www.youtube.com/watch?v=uU4pjtcbFeg&index=1&list=PLyb_C2HpOQSC4M3lzzrql7DSppTeAxh-x) !!!
 
 Fork this repository and clone.
 
