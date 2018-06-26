@@ -10,7 +10,7 @@ Fork this repository and clone.
 
 ```bash
 git clone https://github.com/{your_id}/Wit-Facebook.git
-cd python-weather-messenger-bot
+cd Ramilchat
 ```
 
 # Configuration
