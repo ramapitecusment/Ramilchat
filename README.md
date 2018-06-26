@@ -8,8 +8,11 @@ The bot is designed to provide real-time weather updates on Messenger using the 
 # Initial Installation
 Fork this repository and clone.
 
+```bash
 git clone https://github.com/{your_id}/Wit-Facebook.git
 cd python-weather-messenger-bot
+```
+
 # Configuration
 Setup your wit.ai App
 Setup your Facebook Page
@@ -21,12 +24,16 @@ You can find information on how to set up the above in the Guide by Facebook.
 ##Launch Server in Heruku
 
 Run heroku create and push to heroku:
+```bash
 heroku create
 git push heroku master
+```
 # Further Configuration
 Setup your Facebook Webhook callback to the heroku app you deployed.
 Set the following in your HEroku Config Variables:
+```bash
 WIT_TOKEN = "your wit.ai token"
 FB_PAGE_TOKEN = "your facebook page token"
 FB_VERIFY_TOKEN = "your webhook verification token"
+```
 Finally go to the Facebook page you made and chat to the bot!
