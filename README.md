@@ -70,8 +70,28 @@ Use Git to clone ramilchat's source code to your local machine.
 $ heroku git:clone -a ramilchat
 $ cd ramilchat
 ```
+
+Deploy your changes
+Make some changes to the code you just cloned and deploy them to Heroku using Git.
+```bash
+$ git add .
+$ git commit -am "make it better"
+$ git push heroku master
+```
+# Further Configuration
+Setup your Facebook Webhook callback to the heroku app you deployed.
+Set the following in your HEroku Config Variables:
+```bash
+WIT_TOKEN = "your wit.ai token"
+FB_PAGE_TOKEN = "your facebook page token"
+FB_VERIFY_TOKEN = "your webhook verification token"
+```
+Finally go to the Facebook page you made and chat to the bot!
+
+# Results of the ChatBot:
+
 Hi
-### Hi! How can I help you?
+###### Hi! How can I help you?
 How are you?
 Hi! I am fine! What about you? 🙂
 I am also fine 🙂
@@ -122,23 +142,3 @@ The Name Uranus is Over 2,500 Years Old
 Tell me a joke
 Q: Is Google a he or a she?
 A: A she, no doubt, because it won‘t let you finish your sentence without suggesting other ideas.
-Deploy your changes
-Make some changes to the code you just cloned and deploy them to Heroku using Git.
-```bash
-$ git add .
-$ git commit -am "make it better"
-$ git push heroku master
-```
-# Further Configuration
-Setup your Facebook Webhook callback to the heroku app you deployed.
-Set the following in your HEroku Config Variables:
-```bash
-WIT_TOKEN = "your wit.ai token"
-FB_PAGE_TOKEN = "your facebook page token"
-FB_VERIFY_TOKEN = "your webhook verification token"
-```
-Finally go to the Facebook page you made and chat to the bot!
-
-# Results of the ChatBot:
-
-
