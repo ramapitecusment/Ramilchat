@@ -12,6 +12,12 @@ Fork this repository and clone.
 git clone https://github.com/{your_id}/Wit-Facebook.git
 cd Ramilchat
 ```
+For local development make sure you install the development requirements:
+
+```bash
+pip install -r requirements.txt
+pip install -e .
+```
 
 # Configuration
 Setup your wit.ai App
