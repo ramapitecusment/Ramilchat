@@ -3,7 +3,7 @@
 
 For years, in-person meetings and phone calls were the dominant means of communication in society and business. Nowadays, with the rise of the internet, a multitude of new options became available (email, social media, mobile apps or filling out a form on a website and waiting for a follow-up). However, recently, the rise of real-time messaging has led to a fundamental shift in how people prefer to communicate with one another.
 
-	Chatbots are staring to become more and more popular, even more now that they can study, and answer questions in a shorter time. Our group is composed by international students, and we want to use this technology to support future international students in FH Joanneum, because we understand all difficulties living in a different country with different traditions. We conducted a survey between international students and we found that the biggest difficulties are:
+Chatbots are staring to become more and more popular, even more now that they can study, and answer questions in a shorter time. Our group is composed by international students, and we want to use this technology to support future international students in FH Joanneum, because we understand all difficulties living in a different country with different traditions. We conducted a survey between international students and we found that the biggest difficulties are:
 	
 1.	Timetable changes;
 2.	Administrative questions;
