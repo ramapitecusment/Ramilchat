@@ -30,6 +30,8 @@ In the future, the chatbot can be developed, trained, educated in a way that it 
 A Python bot, that contains a Flask server designed to be deployed on Heroku. The application uses a bot made using the Python API from Wit.ai and the Facebook Messenger API.
 
 # Initial Installation
+
+BEFORE STARTING CREATING THE CHATBOT WATCH [THIS VIDEO](https://www.youtube.com/watch?v=uU4pjtcbFeg&index=1&list=PLyb_C2HpOQSC4M3lzzrql7DSppTeAxh-x)
 Fork this repository and clone.
 
 ```bash
@@ -51,8 +53,6 @@ This code assumes the above have been set up and trained according to the quicks
 You can find information on how to set up the above in the [Guide by Facebook](https://developers.facebook.com/quickstarts/?platform=web).
 
 ## Launch Server in Heruku
-
-BEFORE STARTING CREATING THE CHATBOT WATCH [THIS VIDEO](https://www.youtube.com/watch?v=uU4pjtcbFeg&index=1&list=PLyb_C2HpOQSC4M3lzzrql7DSppTeAxh-x)
 
 Install the Heroku CLI
 Download and install the Heroku CLI.
