@@ -1,8 +1,10 @@
 # Ramilchat
 #Wit Facebook Chatbot for international students
 
-For years, in-person meetings and phone calls were the dominant means of communication in society and business. Nowadays, with the rise of the internet, a multitude of new options became available (email, social media, mobile apps or filling out a form on a website and waiting for a follow-up). However, recently, the rise of real-time messaging has led to a fundamental shift in how people prefer to communicate with one another. [1]
+For years, in-person meetings and phone calls were the dominant means of communication in society and business. Nowadays, with the rise of the internet, a multitude of new options became available (email, social media, mobile apps or filling out a form on a website and waiting for a follow-up). However, recently, the rise of real-time messaging has led to a fundamental shift in how people prefer to communicate with one another.
+
 	Chatbots are staring to become more and more popular, even more now that they can study, and answer questions in a shorter time. Our group is composed by international students, and we want to use this technology to support future international students in FH Joanneum, because we understand all difficulties living in a different country with different traditions. We conducted a survey between international students and we found that the biggest difficulties are:
+	
 1.	Timetable changes;
 2.	Administrative questions;
 3.	Contacts of international office;
@@ -14,8 +16,11 @@ For years, in-person meetings and phone calls were the dominant means of communi
 9.	Currency of EUR;
 10.	Weather changes;
 11.	Etc.;
+
 Our main goal is to create a chatbot to make it easier for new students to adapt in a new environment. Therefore, we decided to implement most of the features mentioned above as well as simple conversation with users.
+
 In the future, the chatbot can be developed, trained, educated in a way that it will be able to answer almost every question of the student (not only incoming ones) and notify all students of FH Joanneum about:
+
   1.	Exam dates;
   2.	Deadlines;
   3.	Grades;
